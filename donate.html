@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate Now</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+  <div class="bg-gray-800 rounded-lg p-8 shadow-xl w-full max-w-md text-center">
+    <h1 class="text-3xl font-bold mb-4 text-cyan-400">Support Our Mission ❤️</h1>
+    <p class="mb-4">Scan the QR code below to donate using any UPI app.</p>
+
+    <div class="bg-white rounded-md p-4 mb-4">
+      <img src="Images/Googlepay.png" alt="Donation QR" class="mx-auto w-48 h-48 object-cover" />
+    </div>
+
+    <form action="send_sms.php" method="POST" enctype="multipart/form-data" class="space-y-4">
+      <h2 class="text-xl font-semibold mb-2">After donating, please confirm below:</h2>
+      
+      <input type="text" name="name" placeholder="Your Name"
+             class="w-full p-2 rounded bg-gray-700 border border-gray-600 text-white" required />
+      <input type="tel" name="phone" placeholder="Your Phone Number"
+             class="w-full p-2 rounded bg-gray-700 border border-gray-600 text-white" required />
+      
+      <div class="text-left">
+        <label for="screenshot" class="block text-gray-300 mb-1">Upload Payment Screenshot:</label>
+        <input type="file" name="screenshot" id="screenshot"
+               accept="image/*" required
+               class="w-full text-sm text-gray-200" />
+      </div>
+
+      <button type="submit"
+              class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-2 px-4 rounded w-full">
+        I Have Donated
+      </button>
+    </form>
+
+    <p class="text-sm text-gray-400 mt-6">Thank you for your kind support 💖</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indo Science</title>
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand me-auto" href="">
+        <img src="Images/ilogo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+      </a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Indo Science</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item ">
+              <a class="nav-link "  href="Main.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mx-lg-2" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Events</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="events.html">Upcoming Events</a></li>
+                <li><a class="dropdown-item" href="events.html">Past Events</a></li>
+                
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mx-lg-2" href="features.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Features</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="features.html#spark">Spark</a></li>
+                <li><a class="dropdown-item" href="features.html#Rocketry">Rocketry</a></li>
+                <li><a class="dropdown-item" href="features.html#knowledge">Knowledge Visit</a></li>
+                <li><a class="dropdown-item" href="features.html#science">Science And Tech Activity</a></li>
+                <li><a class="dropdown-item" href="features.html#steam">STEAM FOR SCHOOL</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mx-lg-2" href="team.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Team</a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="team.html">Team</a></li>
+                <li><a class="dropdown-item" href="volunteers.html">Volunteers</a></li>
+               </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mx-lg-2" href="about.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">About</a>
+              <ul class="dropdown-menu">
+            
+                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+            
+                <!-- Submenu container -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Audit Reports</a>
+            
+                  <!-- Submenu items -->
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="AUDITREPORT_FY_22_23.pdf">23-24 Audit Report</a></li>
+                    <li><a class="dropdown-item" href="AUDITREPORT_FY_22_23.pdf">22-23 Audit Report</a></li>
+                    <li><a class="dropdown-item" href="Audit Report FY 21 22.pdf">21-22 Audit Report</a></li>
+                    <li><a class="dropdown-item" href="AUDITREPORT_20-21.pdf">20-21 Audit Report</a></li>
+                    <li><a class="dropdown-item" href="AUDITREPORT_19-20.pdf">19-20 Audit Report</a></li>
+                  </ul>
+                </li>
+                <!---<li><a class="dropdown-item" href="AUDITREPORT_19-20.pdf">Audit Reports</a></li>
+                           </ul> --->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="contactus.html">contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="collaboration.html">ISRO Collaboration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="corporatep.html">Corporate Partnership</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="donate.html" class="donate-button">Donate</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-----navbar close here------>
+
+  
+  <!-- Hero Section -->
+  <section class="hero" style="background: url('background.png') no-repeat center/cover;">
+    <div class="hero-text">
+      <p class="welcome">WELCOME TO INDO SCIENCE ☄️</p>
+      <h1>WE ARE ISRO SPACE TUTORS, <br> Guiding stars to their brightest orbits.</h1>
+      <p class="desc">
+        At Indo Science, we turn children's curiosity into a force for change. Our program focuses on developing
+        scientific minds from a young age. By empowering their scientific thinking, we empower the next generation to
+        become the
+        innovators who will build a better future.
+      </p>
+      <div class="buttons">
+        <a href="https://www.youtube.com/@indoscienceeducationpune5993/featured" class="btn">Explore</a>
+        <a href="#" class="link">What do we do</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="Images/web2.jpg" alt="Space Illustration"> <!-- replace with space illustration -->
+    </div>
+  </section>
+
+   
+<!----------------  logo slide ----------------->
+ <div class="logo-slider">
+    <div class="slide-track">
+      <!-- Repeat logos for smooth looping -->
+      <div class="slide"><img src="Images/client-1.png" alt="Logo"></div>
+      <div class="slide"><img src="Images/client-2.png" alt="Logo"></div>
+      <div class="slide"><img src="Images/client-3.png" alt="Logo"></div>
+      
+      <!-- Duplicate for infinite loop -->
+      <div class="slide"><img src="Images/client-1.png" alt="Logo"></div>
+      <div class="slide"><img src="Images/client-2.png" alt="Logo"></div>
+      <div class="slide"><img src="Images/client-3.png" alt="Logo"></div>
+      
+      
+    </div>
+  </div>
+
+
+  <!----mession section------->
+  <section class="missions">
+   <div class="missions-header">
+    <h2>Featured Achievement</h2>
+    <a href="#" class="all-missions">All Science Missions →</a>
+  </div>
+  <p class="missions-subtitle">
+    Discover, Create, Inspire.
+    Our mission milestones showcase the breadth and depth of INDO science.
+  </p>
+
+  <div class="missions-grid">
+    <!-- Card 1 -->
+    <div class="mission-card">
+      <img src="Images/para.png" alt="TRACERS">
+      <div class="mission-content">
+        <h3>paramoter</h3>
+        <p>
+        Indo Science Education Trust (ISET),of Maharashtra, India, set a record for completing the first successful manned testing of a satellite on board a paramotor. successfully completed the testing of a satellite named ‘VAYUSAT’ at Government Gliding Centre, Pune, DGCA, on August 15, 2023, to commemorate Azadi Ka Amrit Mahotsav. 
+        </p>
+        <a href="#">More about ParaMotor Satallite Testing →</a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="mission-card">
+      <img src="Images/IISF Challenge2.jpg" alt="Lucy">
+      <div class="mission-content">
+        <h3>iisf</h3>
+        <p>
+          The IISF Challenge stands as a celebration of creativity, curiosity, and scientific spirit. This year, Indo Science participants stepped forward with bold ideas, innovative solutions, and unwavering determination to tackle real-world problems through the power of STEM.
+        </p>
+        <a href="#">More about IISF Challenge →</a>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="mission-card">
+      <img src="Images/SPARK India Program5.jpg" alt="NEO Surveyor">
+      <div class="mission-content">
+        <h3>wemosat</h3>
+        <p>
+          WEMOSAT is our step toward smarter, real-time weather monitoring and a future shaped by scientific innovation. Designed as a compact and efficient weather monitoring system, WEMOSAT collects crucial atmospheric data such as temperature, humidity, pressure, and environmental changes with remarkable accuracy.
+        </p>
+        <a href="#">More about WeMoSat →</a>
+      </div>
+    </div>
+  </div>
+ </section>
+
+
+
+<!-----* Teaching section *--------->
+ <section class="teaching-section">
+  <div class="container">
+    <div class="content">
+      <h1>Interactive Learning and Hands-On Space Education Sessions for Schools</h1>
+      <p>
+        We believe in empowering students with knowledge and practical skills that prepare them 
+        for the future. Our teaching programs focus on interactive learning, mentorship, and 
+        hands-on experience. Whether you are a beginner or an advanced learner, you’ll explore 
+        new ideas, work on real projects, and collaborate with peers to solve challenges.
+      </p>
+    </div>
+    <div class="image">
+      <img src="Images/teaching.jpg" alt="Teaching Program">
+    </div>
+  </div>
+   <a href="https://www.youtube.com/@indoscienceeducationpune5993/playlists" 
+   target="_blank" 
+   class="btn btn-primary ms-4">
+   Watch Videos
+   </a>
+</section>
+<!-- Galaxy Section -->
+  <section class="counter-section">
+    <div class="overlay"></div>
+    <div class="counter-content">
+      <h1 class="big-title">22 YEARS OF BRILLIANCE <br> From curiosity to Creation.</h1>
+      <p class="desc">
+        INDO Science has reached thousands of young minds, turning curiosity into achievement.<BR>
+        Numbers tell our story thousands of students, countless successes, one vision: INDO Science.
+      </p>
+      <!-- Counter -->
+      <div class="counter-box">
+        <div class="counter" data-target="750000">750000</div>
+        <span class="counter-text">Students Connected with INDO Science</span>
+      </div>
+      <!---<p class="label">
+        More About Us →
+      </p> -->
+      <a href="about.html" class="label">More About Us →</a>
+    </div>
+  </section>
+
+  <!---------- image gallry --------------------->
+  <section class="gallery-section">
+    <div class="gallery-header">
+      <h2>Image Galleries</h2>
+      <a href="events.html" class="more-link">More Indo Science Images →</a>
+    </div>
+  
+    <!-- Hidden Gallery Section -->
+    
+  
+      <div class="gallery-grid">
+  
+        <!-- Gallery 1 -->
+        <div class="gallery-card">
+          <div class="gallery-images">
+            <img src="images/Godrej Award.jpeg" alt="Crew" class="big-img">
+            <div class="small-imgs">
+              <img src="images/lauch.jpg" alt="Crew small">
+              <img src="images/IISF Challenge1.jpg" alt="Crew small">
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3>Indo Science Godrej Award</h3>
+            <p>24 Images</p>
+          </div>
+        </div>
+  
+        <!-- Gallery 2 -->
+        <div class="gallery-card">
+          <div class="gallery-images">
+            <img src="images/isro2.jpg" alt="Spacecraft" class="big-img">
+            <div class="small-imgs">
+              <img src="images/isro1.jpg" alt="Spacecraft small">
+              <img src="images/spacesuite.jpg" alt="Spacecraft small">
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3>Indo Science Spacecraft Gallery</h3>
+            <p>12 Images</p>
+          </div>
+        </div>
+       
+        <!-- Gallery 3 -->
+        <div class="gallery-card">
+          <div class="gallery-images">
+            <img src="images/air1.jpg" alt="Rocket" class="big-img">
+            <div class="small-imgs">
+              <img src="images/air2.jpg" alt="Rocket small">
+              <img src="images/air3.jpg" alt="Rocket small">
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3>Indo Science Rocket Gallery</h3>
+            <p>12 Images</p>
+          </div>
+        </div>
+      </div>
+      </section>
+
+ <!-------------video section ------------->
+<section class="shorts-section">
+  <h2 class="section-title">Explore More Videos</h2>
+  <div class="shorts-container">
+
+    <!-- Video Card 1 -->
+    <div class="short-card">
+      <video class="short-video" preload="metadata" poster="Images/picosat.png">
+        <source src="pico.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="short-title">Pico satellite test</div>
+    </div>
+
+    <!-- Video Card 2 -->
+    <div class="short-card">
+      <video class="short-video" preload="metadata" poster="Images/3air.png">
+        <source src="air3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="short-title">Glide more</div>
+    </div>
+
+    <!-- Video Card 3 -->
+    <div class="short-card">
+      <video class="short-video" preload="metadata" poster="Images/2air.png">
+        <source src="air2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="short-title">Paragliding </div>
+    </div>
+
+    <!-- Video Card 4 -->
+    <div class="short-card">
+      <video class="short-video" preload="metadata" poster="Images/1air.png">
+        <source src="air1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="short-title">Air Display</div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!------------------ Frequently asked questions ---------------->
+<section class="faq-section">
+ <div class="faq-container">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      What is INDO Science?
+      <span class="arrow">&#9662;</span>
+    </button>
+    <div class="faq-answer">
+      <p>Indo Science Education Trust is, a NON PROFIT, strives to bridge the gap between theoretical and practical STEM knowledge.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      How many students connected with indo science?
+      <span class="arrow">&#9662;</span>
+    </button>
+    <div class="faq-answer">
+      <p>650,000 Number of rural students reached and 75,000 Number of students engaged in robotics , 120,000 students engaged in competitions</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      Do this institute teach science subjects only?
+      <span class="arrow">&#9662;</span>
+    </button>
+    <div class="faq-answer">
+      <p>No, we teach about Robotics, Technology, Satellite Programming. We also conduct lectures of Astronomy, Aeromodelling,</p>
+    </div>
+  </div>
+
+</div>
+</section>
+<!--------frequently asked question closed here-->
+
+
+
+<!-------testimonials------>
+<section class="testimonials">
+  <h2 class="testimonials-title">─ Testimonials ─</h2>
+  <div class="testimonial-container">
+    <div class="testimonial active">
+      <p>“Integrating robotics into the curriculum has had a remarkable impact on our school. Students are more engaged,
+        motivated, and collaborative. I've witnessed their confidence soar as they tackle complex challenges with
+        enthusiasm.”</p>
+      <h4>Ms. Patil <span>- School Principal</span></h4>
+    </div>
+
+    <div class="testimonial">
+      <p>“The BHAVISHIKA program gave our students hands-on experience in satellite building. It’s inspiring to see them
+        take real ownership of projects at such a young age.”</p>
+      <h4>Mr. Sharma <span>- Science Teacher</span></h4>
+    </div>
+
+    <div class="testimonial">
+      <p>“I joined individually, and it was the best decision. The trainers are supportive and made learning satellite
+        technology fun and exciting!”</p>
+      <h4>Riya <span>- Student</span></h4>
+    </div>
+  </div>
+</section>
+<!------- testimonials closed ------>
+
+
+
+<!----------- footer -------------->
+ <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Left Section -->
+    <div class="footer-left">
+      <h2>Get in Touch</h2>
+      <p>
+        IndoScience is dedicated to spreading knowledge and innovation in space science.
+        Stay connected with us through our channels.
+      </p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/_indosciedu_?igsh=NTc4MTIwNjQ2YQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/indo-science-education-trust-pune?originalSubdomain=in" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://m.facebook.com/indoscience/" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+      <div class="contact-info">
+        <p><strong>Address:</strong> 2, Kalaban Park, Pune, Near Walnut School road, Phursungi,Pune-412308, Maharashtra</p>
+        <p><strong>Phone:</strong> +91 9822090659</p>
+        <p><strong>Email:</strong> info@indoscience.org</p>
+      </div>
+
+      <div class="buttons">
+        <a href="InternForm.html" style="padding:2px 2px; background:#0202029f; color:rgba(60, 91, 191, 0.748); border-radius:2px; text-decoration:none; font-weight: 10px;">Apply For ISRO Internship</a>
+      </div>
+   </div>
+
+    <!-- Right Section -->
+    <div class="footer-right">
+      <div class="qr-box">
+        <img src="images/WhatsappAdd.png" alt="IndoScience QR Code">
+        <p>Scan to visit IndoScience</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 IndoScience. All Rights Reserved.</p>
+  </div>
+ </footer>
+
+ <!---footer closed here------>
+
+
+
+<!-- FontAwesome for icons -->
+
+
+<!--------script js ---------->
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous">
+    
+  </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+    // Counter animation
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200; // speed control
+
+    const animateCounters = () => {
+      counters.forEach(counter => {
+        const updateCount = () => {
+          const target = +counter.getAttribute('data-target');
+          const count = +counter.innerText;
+          const increment = target / speed;
+
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 20);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCount();
+      });
+    };
+
+    // Trigger animation when visible
+    const section = document.querySelector('.counter-section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          observer.unobserve(section);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    observer.observe(section);
+
+
+
+  //video section
+  document.addEventListener("DOMContentLoaded", () => {
+      const videos = document.querySelectorAll(".short-video");
+
+      videos.forEach(video => {
+        video.addEventListener("click", () => {
+          // Pause all other videos
+          videos.forEach(v => {
+            if (v !== video) {
+              v.pause();
+            }
+          });
+
+          // Toggle play/pause on clicked video
+          if (video.paused) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        });
+      });
+    });
+
+
+  //frequently asked questions 
+
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+
+    question.addEventListener("click", () => {
+      item.classList.toggle("active");
+
+      const answer = item.querySelector(".faq-answer");
+
+      if (item.classList.contains("active")) {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      } else {
+        answer.style.maxHeight = 0;
+      }
+    });
+  });
+
+<!-------- testimonials /----------->
+  
+    document.addEventListener("DOMContentLoaded", () => {
+        let index = 0;
+      const testimonials = document.querySelectorAll(".testimonial");
+
+      function showTestimonial(i) {
+        testimonials.forEach((t, idx) => {
+          t.classList.remove("active");
+          if (idx === i) t.classList.add("active");
+        });
+  }
+
+      // Show first one initially
+      showTestimonial(index);
+
+  // Auto slide every 4 seconds
+  setInterval(() => {
+        index = (index + 1) % testimonials.length;
+      showTestimonial(index);
+  }, 4000);
+ });    
+
+
+  //submenu script of audit 
+  
+document.querySelectorAll('.dropdown-submenu > a').forEach(function(element){
+  element.addEventListener("click", function (e) {
+    e.preventDefault();          // Stop link click
+    e.stopPropagation();         // Stop Bootstrap from closing menu
+
+    let submenu = this.nextElementSibling;
+
+    // Toggle submenu
+    if (submenu.style.display === "block") {
+      submenu.style.display = "none";
+    } else {
+      submenu.style.display = "block";
+    }
+  });
+});
+
+
+
+
+</script>
+
+
+
+  
+</body>
+
+</html>

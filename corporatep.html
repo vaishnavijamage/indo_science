@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corportae Partnership</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        .navbar {
+            background-color: white;
+        }
+
+        .navbar-brand {
+            font-weight: 500;
+            color: #009970;
+            font-size: 24px;
+            transition: 0.3s color;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+            /* Adjust logo height */
+            width: auto;
+            /* Keeps aspect ratio */
+            max-width: 100%;
+            object-fit: contain;
+            margin-left: 20px;
+            /*filter: grayscale(100%) brightness(0) invert(1);*/
+
+        }
+
+        
+/* Position submenu of audit reports*/
+
+/* basic position */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: -0.5rem;
+}
+
+/* Desktop: show on hover */
+@media (min-width: 992px) {
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Mobile: show on click */
+@media (max-width: 991px) {
+  .dropdown-submenu > a {
+    display: flex;
+    justify-content: space-between;
+  }
+  .dropdown-submenu:focus-within > .dropdown-menu {
+    display: block;
+    position: static;
+    margin: 0;
+  }
+}
+
+
+/*audit report close here*/
+
+        /*@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 40px; Smaller logo on mobile 
+  }
+}*/
+        .donate-button {
+            background-color: #009970;
+            color: #fff;
+            font-size: 14px;
+            padding: 8px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: 0.3s background-color;
+        }
+
+        .donate-button:hover {
+            background-color: #00b383;
+        }
+
+        .navbar-toggler {
+            border: none;
+            font-size: 1.25rem;
+        }
+
+        .navbar-toggler:focus,
+        .btn-close:focus {
+            box-shadow: none;
+            outline: none;
+        }
+
+        .nav-link {
+            color: #666777;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #000;
+        }
+
+        @media (min-width: 991px) {
+            .nav-link::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 2px;
+                background-color: #009970;
+                visibility: hidden;
+                transition: 0.3s ease-in-out;
+            }
+
+            .nav-link:hover::before,
+            .nav-link.active::before {
+                width: 100%;
+                visibility: visible;
+            }
+
+        }
+/*--------------- heading section ------------- */
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+        }
+
+        /* Top Section */
+        .top-section {
+            background-color: #003b4a;
+            color: #ffffff;
+            text-align: center;
+            padding: 100px 20px 80px; 
+        }
+
+        .top-section h1 {
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        .top-section p {
+            max-width: 600px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+        }
+
+        .top-section .btn {
+            background-color: #ff5a36;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s ease;
+        }
+
+        .top-section .btn:hover {
+            background-color: #e14c2a;
+        }
+
+        /* Business Partnerships Section */
+        .partnerships-section {
+            background-color: #e8f4f8;
+            padding: 80px 20px 60px;
+            text-align: center;
+        }
+
+        .partnerships-section h2 {
+            margin-bottom: 40px;
+            font-size: 2em;
+            color: #222;
+        }
+
+        .icons-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+
+        .icons-row img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .wide-paragraph {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+            font-size: 1.1em;
+            color: #333;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .icons-row {
+                gap: 20px;
+            }
+
+            .icons-row img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .wide-paragraph {
+                font-size: 1em;
+                padding: 0 20px;
+            }
+        }
+
+
+        /* Footer Styling */
+        .footer {
+            background: #000;
+            color: #f0f0f0;
+            padding: 50px 8% 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .footer-left {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .footer-left h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .footer-left p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        .social-links {
+            margin: 15px 0;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 22px;
+            color: #f0f0f0;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #d32f2f;
+        }
+
+        .contact-info p {
+            margin: 6px 0;
+            font-size: 0.95rem;
+            color: #bbb;
+        }
+
+        /* Right Side (QR Box) */
+        .footer-right {
+            flex: 1;
+            min-width: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .qr-box {
+            text-align: center;
+            background: #111;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .qr-box img {
+            width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .qr-box p {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        /* Bottom Bar */
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            border-top: 1px solid #222;
+            padding-top: 15px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-right {
+                margin-top: 20px;
+            }
+        }
+    </style>
+    
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="">
+                <img src="Images/ilogo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+            </a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Indo Science</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="Main.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-lg-2" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Events</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="events.html">Upcoming Events</a></li>
+                                <li><a class="dropdown-item" href="events.html">Past Events</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-lg-2" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Features</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="features.html#spark">Spark</a></li>
+                                <li><a class="dropdown-item" href="features.html#Rocketry">Rocketry</a></li>
+                                <li><a class="dropdown-item" href="features.html#knowledge">Knowledge Visit</a></li>
+                                <li><a class="dropdown-item" href="features.html#science">Science And Tech Activity</a>
+                                </li>
+                                <li><a class="dropdown-item" href="features.html#steam">STEAM FOR SCHOOL</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-lg-2" href="team.html" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">Team</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="team.html">Team</a></li>
+                                <li><a class="dropdown-item" href="volunteers.html">Volunteers</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-lg-2" href="about.html" role="button" data-bs-toggle="dropdown"
+                             aria-expanded="false">About</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                                <!-- Submenu container -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Audit Reports</a>
+                                
+                                    <!-- Submenu items -->
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="Audit Report fy23  24..pdf">23-24 Audit Report</a></li>
+                                        <li><a class="dropdown-item" href="AUDITREPORT_FY_22_23.pdf">22-23 Audit Report</a></li>
+                                        <li><a class="dropdown-item" href="Audit Report FY 21 22.pdf">21-22 Audit Report</a></li>
+                                        <li><a class="dropdown-item" href="AUDITREPORT_20-21.pdf">20-21 Audit Report</a></li>
+                                        <li><a class="dropdown-item" href="AUDITREPORT_19-20.pdf">19-20 Audit Report</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="contactus.html">contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="collaboration.html">ISRO Collaboration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="corporatep.html">Corporate Partnership</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="donate.html" class="donate-button">Donate</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+   <!-----navbar close  -->
+
+    <!-- Top Hero Section partnership section  -->
+    <section class="top-section">
+        <h1>Partner with Indo Science</h1>
+        <p></p>
+        <button class="btn">Talk with us</button>
+    </section>
+
+    <!-- Partnerships Section -->
+    <section class="partnerships-section">
+        <h2>Corporate Partnership with Indo Science</h2>
+
+        <!-- 5 Icon Row -->
+        <div class="icons-row">
+            <img src="Images/p1.png" alt="Icon 1">
+            <img src="Images/p2.png" alt="Icon 2">
+            <img src="Images/p3.jpeg" alt="Icon 3">
+            <img src="Images/p4.png" alt="Icon 4">
+            <img src="Images/p5.jpg" alt="Icon 5">
+        </div>
+
+        <!-- Full-width Paragraph -->
+        <div class="wide-paragraph">
+            <p>
+                At Indo Science Education Trust, we believe in the power of collaboration to drive meaningful change and
+                make a lasting impact. Through strategic partnerships with esteemed organizations like Cummins India
+                Foundation, Tree Foundation, Maharashtra Arogya Mandal, Lipane Landmarks, and Alacrity Developers, we
+                have been able to expand our reach and enrich our programs.<br>
+                <br>Our corporate partners play a crucial role in supporting our mission to empower young minds and
+                promote STEM education. Their commitment to education, community development, and innovation aligns
+                perfectly with our vision for a scientifically literate and empowered society.<br>
+
+                <br> Through these partnerships, we have been able to implement innovative programs, provide educational
+                resources, and organize impactful events that inspire curiosity, creativity, and critical thinking among
+                students. Together, we have fostered a nurturing environment for young learners, encouraging them to
+                pursue their interests in science, technology, engineering, arts, and mathematics.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!----------- footer -------------->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Left Section -->
+            <div class="footer-left">
+                <h2>Get in Touch</h2>
+                <p>
+                    IndoScience is dedicated to spreading knowledge and innovation in space science.
+                    Stay connected with us through our channels.
+                </p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/_indosciedu_?igsh=NTc4MTIwNjQ2YQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/indo-science-education-trust-pune?originalSubdomain=in" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://m.facebook.com/indoscience/" target="_blank"><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="contact-info">
+                    <p><strong>Address:</strong> 2, Kalaban Park, Pune, Near Walnut School road, Phursungi, Pune-412308, Maharashtra
+                    </p>
+                    <p><strong>Phone:</strong> +91 9822090659</p>
+                    <p><strong>Email:</strong> info@indoscience.org</p>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="footer-right">
+                <div class="qr-box">
+                    <img src="images/WhatsappAdd.png" alt="IndoScience QR Code">
+                    <p>Scan to visit IndoScience</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 IndoScience. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+        <!---submenu script of audit -->
+  <script>
+document.querySelectorAll('.dropdown-submenu > a').forEach(function(element){
+  element.addEventListener("click", function (e) {
+    e.preventDefault();          // Stop link click
+    e.stopPropagation();         // Stop Bootstrap from closing menu
+
+    let submenu = this.nextElementSibling;
+
+    // Toggle submenu
+    if (submenu.style.display === "block") {
+      submenu.style.display = "none";
+    } else {
+      submenu.style.display = "block";
+    }
+  });
+});
+</script>
+
+
+
+</body>
+
+</html>

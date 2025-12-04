@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indo Science</title>
+  <link rel="stylesheet" href="home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<style>
+    body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #003b4a !important ;
+  color : #003b4a;
+}
+
+.navbar{
+  background-color: white;
+}
+
+.navbar-brand{ 
+  font-weight: 500;
+  color: #009970;
+  font-size: 24px;
+  transition: 0.3s color;
+}
+.navbar-brand img {
+  height: 50px;   /* Adjust logo height */
+  width: auto;    /* Keeps aspect ratio */
+  max-width: 100%; 
+  object-fit: contain;
+  margin-left: 20px;
+  /*filter: grayscale(100%) brightness(0) invert(1);*/
+
+}
+
+
+
+/* Position submenu of audit reports*/
+
+/* basic position */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: -0.5rem;
+}
+
+/* Desktop: show on hover */
+@media (min-width: 992px) {
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Mobile: show on click */
+@media (max-width: 991px) {
+  .dropdown-submenu > a {
+    display: flex;
+    justify-content: space-between;
+  }
+  .dropdown-submenu:focus-within > .dropdown-menu {
+    display: block;
+    position: static;
+    margin: 0;
+  }
+}
+
+
+/*audit report close here*/
+
+
+
+/*@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 40px; Smaller logo on mobile 
+  }
+}*/
+.donate-button{
+  background-color: #009970;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color ;
+}
+
+.donate-button:hover{
+  background-color: #00b383;
+}
+
+.navbar-toggler{
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: #666777;
+  font-weight: 500;
+  position: relative;
+}
+.nav-link:hover, .nav-link.active{
+  color: #000;
+}
+
+@media (min-width: 991px) {
+ .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #009970;
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+  }
+  .nav-link:hover::before, .nav-link.active::before{
+    width: 100%;
+    visibility: visible;
+  }
+
+}
+
+/* contact us */
+   body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      line-height: 1.6;
+
+    }
+
+    .contact-section {
+       padding: 150px 30px 70px 50px; /* increased top padding */
+       text-align: center;
+      
+    }
+
+    .contact-section h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    .contact-section p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+      color: white;
+      text-align: left;
+    }
+
+    .contact-details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+      margin-left: 19%;
+      text-align: left;
+    }
+
+    .contact-details div h3 {
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .contact-details div p,
+    .contact-details div a {
+      color: white;
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+
+    .social-links {
+      margin-top: 30px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: #00e0ff;
+      font-size: 1.4rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .contact-section h1 {
+        font-size: 1.6rem;
+      }
+      .contact-details {
+        gap: 20px;
+      }
+    }
+
+    /* Location Map */
+    .map {
+      margin-top: 40px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+    /* Bottom Bar */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #222;
+  padding-top: 15px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+
+</style>
+<body>
+
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand me-auto" href="">
+        <img src="Images/ilogo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+      </a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Indo Science</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item ">
+              <a class="nav-link "  href="Main.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mx-lg-2" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Events</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="events.html">Upcoming Events</a></li>
+                <li><a class="dropdown-item" href="events.html">Past Events</a></li>
+                
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mx-lg-2" href="features.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Features</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="features.html#spark">Spark</a></li>
+                <li><a class="dropdown-item" href="features.html#knowledge">Knowledge Visit</a></li>
+                <li><a class="dropdown-item" href="features.html#Rocketry">Rocketry</a></li>
+                <li><a class="dropdown-item" href="features.html#science">Science And Tech Activity</a></li>
+                <li><a class="dropdown-item" href="features.html#steam">STEAM FOR SCHOOL</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mx-lg-2" href="team.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">Team</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="team.html">Team</a></li>
+                <li><a class="dropdown-item" href="volunteers.html">Volunteers</a></li>
+               </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mx-lg-2" href="about.html" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">About</a>
+               <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                
+                <!-- Submenu container -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">Audit Reports</a>
+            
+                  <!-- Submenu items -->
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Audit Report fy23  24..pdf">23-24 Audit Report</a></li>
+                    <li><a class="dropdown-item" href="AUDITREPORT_FY_22_23.pdf">22-23 Audit Report</a></li>
+                    <li><a class="dropdown-item" href="Audit Report FY 21 22.pdf">21-22 Audit Report</a></li>
+                    <li><a class="dropdown-item" href="AUDITREPORT_20-21.pdf">20-21 Audit Report</a></li>
+                    <li><a class="dropdown-item" href="AUDITREPORT_19-20.pdf">19-20 Audit Report</a></li>
+                  </ul>
+                </li>
+               </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="contactus.html">contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="collaboration.html">ISRO Collaboration</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="corporatep.html">Corporate Partnership</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="donate.html" class="donate-button">Donate</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  
+   <section class="contact-section">
+    <h1>Contact Us</h1>
+    
+    <p>
+      IndoScience is dedicated to advancing knowledge and innovation.  
+      Reach out to us through the details below or visit us at our location.
+      At Indo Science, we firmly believe that cultivating scientific thinking
+      has the potential to tackle various societal challenges, including employment
+      and social issues.
+    </p>
+
+    <div class="contact-details">
+      <div>
+        <h3>📍 Address</h3>
+        <p>2, Kalaban Park, Pune, Near Walnut School road,Fursungi, Pune-412308, Maharashtra</p>
+      </div>
+      <div>
+        <h3>📞 Phone</h3>
+        <p>+91 98765 43210</p>
+      </div>
+      <div>
+        <h3>✉️ Email</h3>
+        <p>info@indoscience.org</p>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <a href="https://m.facebook.com/indoscience/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.linkedin.com/company/indo-science-education-trust-pune?originalSubdomain=in"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/_indosciedu_?igsh=NTc4MTIwNjQ2YQ=="><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <div class="map">
+      <!-- Map iframe -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242072.20716341518!2d73.704856278125!3d18.55697886453841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e9f7690c7409%3A0xa69fa1db8e4317b3!2sKalaban%20Park!5e0!3m2!1sen!2sin!4v1764257510319!5m2!1sen!2sin"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    
+      <!-- Footer -->
+      <div class="footer-bottom">
+        <p>© 2025 IndoScience. All Rights Reserved.</p>
+      </div>
+    </div>
+
+  </section>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+    <!---submenu script of audit -->
+  <script>
+document.querySelectorAll('.dropdown-submenu > a').forEach(function(element){
+  element.addEventListener("click", function (e) {
+    e.preventDefault();          // Stop link click
+    e.stopPropagation();         // Stop Bootstrap from closing menu
+
+    let submenu = this.nextElementSibling;
+
+    // Toggle submenu
+    if (submenu.style.display === "block") {
+      submenu.style.display = "none";
+    } else {
+      submenu.style.display = "block";
+    }
+  });
+});
+</script>
+
+
+</body>
+</html>
