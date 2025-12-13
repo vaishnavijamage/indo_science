@@ -135,15 +135,16 @@
 }
 
 .hero-text h1 {
-  font-size: 44px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 600;
   line-height: 1.3;
   margin-bottom: 20px;
   color: white;
+  font-family:  "Playfair Display", serif;
 }
 
 .desc {
-  font-size: 15px;
+  font-size: 16px;
   color: #666777;
   line-height: 1.6;
   margin-bottom: 30px;
@@ -169,6 +170,7 @@
   margin-left: 20px;
   color: #ba6030;
   text-decoration: none;
+  font-size: 16px;
 }
 
 .hero-image img {
@@ -202,7 +204,7 @@
   max-width: 1200px;
   margin: 60px auto;
   padding: 0 20px;
-  font-family: Arial, sans-serif;
+  font-family: "Playfair Display", serif;
   color: white;
 }
 
@@ -215,9 +217,11 @@
 }
 
 .missions-header h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   margin: 0;
+  
 }
 
 .missions-header .all-missions {
@@ -267,7 +271,7 @@
 }
 
 .mission-content h3 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 10px;
   font-weight: 700;
 }
@@ -313,13 +317,14 @@
 
 .teaching-section .content h1 {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 600;
+  font-family:  "Playfair Display", serif;
   margin-bottom: 20px;
   color: #000;
 }
 
 .teaching-section .content p {
-  font-size: 1.1rem;
+  font-size: 1 rem;
   line-height: 1.6;
   color: #333;
   margin-bottom: 15px;
@@ -389,8 +394,9 @@ body {
 
 
 .big-title {
-  font-size: 3rem;
+  font-size: 3 rem;
   font-weight: 700;
+  font-family:  "Playfair Display", serif;
   margin-bottom: 20px;
   line-height: 1.2;
   color: white;
@@ -406,8 +412,9 @@ body {
 .label {
   font-size: 1rem;
   font-weight: bold;
-  color:#66b3ff94;
+  color:#d32f2f;
   margin-bottom: 30px;
+  text-decoration: none;
 }
 
 /* Counter box */
@@ -416,12 +423,12 @@ body {
 }
 
 .counter {
-  font-size: 2.8rem;
+  font-size: 50px ;
   font-weight: bold;
-  color: #00ff84af;
+  color: #ddd;
 
   display: inline-block;
-  font-size: 50px; 
+  
   animation: pulse 2s ease-in-out infinite;
   transform-origin: center center;
 }
@@ -481,7 +488,8 @@ body {
 }
 
 .gallery-header h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
   font-weight: 700;
   color: black;
 }
@@ -548,7 +556,7 @@ body {
 }
 
 .gallery-info h3 {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   margin-bottom: 5px;
 }
 
@@ -561,13 +569,13 @@ body {
 
 
 
-/*   video section */
+/*   video section 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #F8F8FF;
   
-}
+} */
 
 .shorts-section {
   padding: 40px 5% 20px;
@@ -575,8 +583,9 @@ body {
 }
 
 .section-title {
-  font-size: 16px;
+  font-size: 20 px;
   font-weight: bold;
+  font-family: "Playfair Display", serif;
   margin-bottom: 20px;
   color: rgb(10, 10, 10);
 }
@@ -643,9 +652,9 @@ body {
 }
 
 .footer-left h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #fff;
+  color: #ffffffda;
 }
 
 .footer-left p {
@@ -750,6 +759,7 @@ body {
   text-align: center;
   color: #0c0c0c;
   font-size: 30px;
+  font-family: "Playfair Display", serif;
   margin-bottom: 15px;
   font-weight: bold;
 }
@@ -768,7 +778,7 @@ body {
   background: none;
   border: none;
   color: black;
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
   padding: 15px 0;
   cursor: pointer;
@@ -806,13 +816,15 @@ body {
   background: rgb(20, 20, 20);
   padding: 50px 20px;
   text-align: center;
+  font-family: "Playfair Display", serif;;
 }
 
 .testimonials-title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 30px;
   font-weight: bold;
   color: white;
+  font-family: "Playfair Display", serif;
 }
 
 .testimonial-container {
