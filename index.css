@@ -824,7 +824,7 @@ body {
   font-size: 2rem;
   margin-bottom: 30px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.948);
+  color: whitesmoke;
   font-family: "Poppins", sans-serif;
 }
 
@@ -832,14 +832,15 @@ body {
   max-width: 900px;
   margin: auto;
   position: relative;
+  
 }
 
 .testimonial {
   display: none;
-  background: rgb(33, 32, 32);
+  background: rgba(37, 35, 35, 0.297);
   padding: 25px;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(38, 38, 38, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.173);
 }
 
 .testimonial.active {
