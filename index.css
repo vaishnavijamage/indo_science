@@ -184,7 +184,7 @@
 @media (max-width: 1000px) {
   .hero {
     flex-direction: column;
-    text-align: left;
+    text-align: center;
   }
   .hero-text {
     max-width: 100%;
@@ -316,7 +316,7 @@
 }
 
 .teaching-section .content h1 {
-  font-size: 37px;
+  font-size: 38px;
   font-weight: 600;
   font-family:  "Poppins", sans-serif;
   margin-bottom: 20px;
@@ -371,7 +371,7 @@ body {
 .counter-section {
   position: relative;
   background: url("Images/earth.png") no-repeat center center/cover; 
-  min-height: 680px;
+  min-height: 660px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -394,7 +394,7 @@ body {
 
 
 .big-title {
-  font-size: 42px;
+  font-size: 2.5rem;
   font-weight: 600;
   font-family:  "Poppins", sans-serif;
   margin-bottom: 20px;
@@ -423,7 +423,7 @@ body {
 }
 
 .counter {
-  font-size: 50px ;
+  font-size: 42px ;
   font-weight: bold;
   color: #ddd;
 
@@ -488,7 +488,7 @@ body {
 }
 
 .gallery-header h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: black;
@@ -583,7 +583,7 @@ body {
 }
 
 .section-title {
-  font-size: 20 px;
+  font-size: 2rem;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
@@ -758,7 +758,7 @@ body {
 .faq-title {
   text-align: center;
   color: #0c0c0c;
-  font-size: 30px;
+  font-size: 2rem;
   font-family: "Poppins", sans-serif;
   margin-bottom: 15px;
   font-weight: 600;
@@ -823,7 +823,7 @@ body {
   font-size: 2rem;
   margin-bottom: 30px;
   font-weight: 600;
-  color: white;
+  color: rgba(255, 255, 255, 0.948);
   font-family: "Poppins", sans-serif;
 }
 
