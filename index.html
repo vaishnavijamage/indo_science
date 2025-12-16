@@ -123,8 +123,8 @@
       </div>
     </div>
     <div class="hero-image">
-      <img id="heroSlide" src="Images/web2.jpg" alt="Space Illustration">
-      <!----<img src="Images/web2.jpg" alt="Space Illustration"> --->
+      
+      <img src="Images/web2.jpg" alt="Space Illustration"> 
     </div>
   </section>
 
@@ -594,30 +594,6 @@ document.querySelectorAll('.dropdown-submenu > a').forEach(function(element){
     }
   });
 });
-
-//script for hero image of top fisrt image
-
-  const images = [
-    "Images/earth.png",
-    "Images/Godrej Award.jpeg",
-    "Images/SPARK India Program2.jpg"
-  ];
-
-  let index = 0;
-  const slideImg = document.getElementById("heroSlide");
-
-  setInterval(() => {
-    slideImg.style.opacity = 0;
-
-    setTimeout(() => {
-      index = (index + 1) % images.length;
-      slideImg.src = images[index];
-      slideImg.style.opacity = 1;
-    }, 400);
-
-  }, 3000); // change image every 3 seconds
-
-
 
 
 </script>
