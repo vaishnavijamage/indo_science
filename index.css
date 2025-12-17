@@ -590,13 +590,13 @@ body {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
-  color: rgb(10, 10, 10);
+  color: rgba(10, 10, 10, 0.882);
 }
 
 .shorts-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  gap: 27px;
 }
 
 .short-card {
