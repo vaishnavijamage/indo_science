@@ -112,7 +112,7 @@
     <div class="hero-text">
       <p class="welcome">WELCOME TO INDO SCIENCE ☄️</p>
       <h1>WE ARE ISRO SPACE TUTORS, <br> Guiding stars to their brightest orbits.</h1>
-      <p class="desc">
+      <p class="desc" style="color: rgba(0, 0, 0, 0.685);">
         At Indo Science, we turn children's curiosity into a force for change.we empower the next generation to
         become the
         innovators who will build a better future.
@@ -124,7 +124,7 @@
     </div>
     <div class="hero-image">
       
-      <img src="Images/web2.jpg" alt="Space Illustration"> 
+      <img src="Images/hero-img.png" alt="Space Illustration"> 
     </div>
   </section>
 
@@ -220,6 +220,44 @@
    Watch Videos
    </a>
 </section>
+
+<!-------------------- statistic numbers ------------->
+
+    <div class="stats-header">
+        <h2> Our Impact</h2>
+        <div class="underline"></div>
+    </div>
+
+    <div class="stats-container">
+        <!-- Rural Students -->
+        <div class="stat-card">
+            <span class="stat-icon">👥</span>
+            <span class="stat-number" data-target="650000">0</span>
+            <span class="stat-label">Number of Rural Students Connected</span>
+        </div>
+
+        <!-- Robotics Engagement -->
+        <div class="stat-card">
+            <span class="stat-icon">🤖</span>
+            <span class="stat-number" data-target="75000">0</span>
+            <span class="stat-label">Number of Students Engaged in Robotics</span>
+        </div>
+
+        <!-- Competitions -->
+        <div class="stat-card">
+            <span class="stat-icon">🏆</span>
+            <span class="stat-number" data-target="120000">0</span>
+            <span class="stat-label">Number of Students Engaged Competitions</span>
+        </div>
+
+        <!-- Teachers -->
+        <div class="stat-card">
+            <span class="stat-icon">👨‍🏫</span>
+            <span class="stat-number" data-target="7500">0</span>
+            <span class="stat-label">Number of teachers engaged, along with students</span>
+        </div>
+    </div>
+
 <!-- Galaxy Section -->
   <section class="counter-section">
     <div class="overlay"></div>
@@ -299,12 +337,13 @@
       </div>
       </section>
 
- <!-------------video section ------------->
+<!-------------video section ----------
+
 <section class="shorts-section">
   <h2 class="section-title">Watch Our Videos</h2>
   <div class="shorts-container">
 
-    <!-- Video Card 1 -->
+    <!-- Video Card 1 --
     <div class="short-card">
       <video class="short-video" preload="metadata" poster="Images/picosat.png">
         <source src="pico.mp4" type="video/mp4">
@@ -313,7 +352,7 @@
       <div class="short-title">Pico satellite test</div>
     </div>
 
-    <!-- Video Card 2 -->
+    <!-- Video Card 2 --
     <div class="short-card">
       <video class="short-video" preload="metadata" poster="Images/3air.png">
         <source src="air3.mp4" type="video/mp4">
@@ -322,7 +361,7 @@
       <div class="short-title">Glide more</div>
     </div>
 
-    <!-- Video Card 3 -->
+    <!-- Video Card 3 --
     <div class="short-card">
       <video class="short-video" preload="metadata" poster="Images/2air.png">
         <source src="air2.mp4" type="video/mp4">
@@ -331,7 +370,7 @@
       <div class="short-title">Paragliding </div>
     </div>
 
-    <!-- Video Card 4 -->
+    <!-- Video Card 4 --
     <div class="short-card">
       <video class="short-video" preload="metadata" poster="Images/1air.png">
         <source src="air1.mp4" type="video/mp4">
@@ -341,7 +380,7 @@
     </div>
 
   </div>
-</section>
+</section>---->
 
 
 
@@ -593,6 +632,42 @@ document.querySelectorAll('.dropdown-submenu > a').forEach(function(element){
     }
   });
 });
+
+//statictic script
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const stats = document.querySelectorAll('.stat-number');
+    const speed = 200; // Lower is faster
+
+    const animateStats = (counter) => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const increment = target / speed;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(() => animateStats(counter), 10);
+      } else {
+        counter.innerText = target.toLocaleString() + '+';
+      }
+    };
+
+    // Intersection Observer to start animation when scrolled into view
+    const observerOptions = {
+      threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateStats(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    stats.forEach(stat => observer.observe(stat));
+  });
 
 
 </script>

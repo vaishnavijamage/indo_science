@@ -2,12 +2,14 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #0a0f2c !important;
-  color: #ffffff
+  background-color: #ffffff !important;
+  color: #ffffff;
 }
 
 .navbar{
-  background-color: white;
+  background-color: rgba(252, 252, 252, 0.86);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+
 }
 
 
@@ -110,9 +112,6 @@
 
 
 
-
-
-
 /* Hero Section */
 .hero {
   display: flex;
@@ -139,15 +138,16 @@
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: 20px;
-  color: white;
+  color: rgba(22, 22, 22, 0.878);
   font-family:  "Poppins", sans-serif;
 }
 
 .desc {
   font-size: 16px;
-  color: #666777;
+   /* #666777;*/
   line-height: 1.6;
   margin-bottom: 30px;
+  color: #000;
 }
 
 .buttons {
@@ -176,7 +176,7 @@
 .hero-image img {
   width: 440px;
   max-width: 100%;
-  height: 350px;
+  height: 380px;
 }
 
 
@@ -213,6 +213,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  color: #000;
   
 }
 
@@ -301,6 +302,7 @@
   background: #fff;
   padding: 40px 5%;
   margin-top: 20px; /* small gap from top */
+  
 }
 
 .teaching-section .container {
@@ -333,6 +335,7 @@
 .teaching-section .image {
   flex: 1 1 45%;
   text-align: center;
+  text-align: right;
 }
 
 .teaching-section .image img {
@@ -359,6 +362,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+  
 }
 /*
 body {
@@ -476,7 +480,8 @@ body {
 /* Section */
 .gallery-section {
   padding: 40px 8%;
-  background: #e9f3ff;
+  background: #ffffff;
+  margin-top: 50px;
 }
 
 /* Header */
@@ -513,8 +518,10 @@ body {
 }
 
 .gallery-card {
-  background: white;
+  background: rgba(255, 255, 255, 0.615);
   border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+
   overflow: hidden;
   transition: transform 0.3s ease;
   height: 420px;
@@ -743,8 +750,9 @@ body {
 
 .faq-section {
   width: 100%;
-  background: #F0F5FF;
- 
+  background: #ffffff;
+  margin-bottom: 50px;
+  margin-top: 40px;
   padding: 20px 0;
   display: flex;
   justify-content: center;
@@ -761,13 +769,14 @@ body {
   color: #0c0c0c;
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   font-weight: 600;
+
 }
 
 /* FAQ Items */
 .faq-item {
-  background: #F0F8FF; 
+  background: #f4f6f7; 
   border-bottom: 1px solid #737373;
   padding: 0 20px;
   margin-bottom: 6px;
@@ -875,7 +884,8 @@ body {
   width: 100%;              
   max-width: 100vw;         
   overflow: hidden;
-  background: #fff;         
+  background: #fff; 
+   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);        
   display: flex;
   align-items: center;
   padding: 10px 0;
@@ -951,3 +961,99 @@ body {
 }
 
 
+/* statistics numbers */
+#impact-stats-section {
+--primary: #ffffff;
+--secondary: #1d4ed8;
+--text-main: #334155;
+--text-dim: #64748b;
+--bg-card: #e2e8f0;
+--transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+background-color: var(--primary);
+color: var(--text-main);
+padding: 5rem 5%;
+font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+overflow: hidden;
+}
+
+.stats-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.stats-header h2 {
+   
+    color: var(--text-main);
+    margin-bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+
+.stats-header .underline {
+    width: 60px;
+    height: 4px;
+    background: var(--secondary);
+    margin: 0 auto;
+}
+
+.stats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: -40px;
+    margin-bottom: 55px;
+}
+
+.stat-card {
+    background: var(--bg-card);
+    padding: 3rem 1.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(9, 9, 9, 0.167);
+    transition: var(--transition);
+    text-align: center;
+    position: relative;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--secondary);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+.stat-icon {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 740;
+    color: var(--secondary);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.stat-label {
+    color: var(--text-dim);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #impact-stats-section { padding: 4rem 5%; }
+    .stat-number { font-size: 2.8rem; }
+    .stats-header h2 { font-size: 2rem; }
+}
