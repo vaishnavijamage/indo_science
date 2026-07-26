@@ -13,388 +13,401 @@
 
 </head>
 <style>
-    body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff ;
-  color: #ffffff ;
-}
-
-.navbar{
-  background-color: white;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-
-}
-
-/* Position submenu of audit reports*/
-
-/* basic position */
-.dropdown-submenu {
-  position: relative;
-}
-
-.dropdown-submenu > .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  margin-top: -0.5rem;
-}
-
-/* Desktop: show on hover */
-@media (min-width: 992px) {
-  .dropdown-submenu:hover > .dropdown-menu {
-    display: block;
-  }
-}
-
-/* Mobile: show on click */
-@media (max-width: 991px) {
-  .dropdown-submenu > a {
-    display: flex;
-    justify-content: space-between;
-  }
-  .dropdown-submenu:focus-within > .dropdown-menu {
-    display: block;
-    position: static;
+  body {
+    height: 100%;
     margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #ffffff;
   }
-}
+
+  .navbar {
+    background-color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+
+  }
+
+  /* Position submenu of audit reports*/
+
+  /* basic position */
+  .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu>.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: -0.5rem;
+  }
+
+  /* Desktop: show on hover */
+  @media (min-width: 992px) {
+    .dropdown-submenu:hover>.dropdown-menu {
+      display: block;
+    }
+  }
+
+  /* Mobile: show on click */
+  @media (max-width: 991px) {
+    .dropdown-submenu>a {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .dropdown-submenu:focus-within>.dropdown-menu {
+      display: block;
+      position: static;
+      margin: 0;
+    }
+  }
 
 
-/*audit report close here*/
+  /*audit report close here*/
 
-.navbar-brand{ 
-  font-weight: 500;
-  color: #009970;
-  font-size: 24px;
-  transition: 0.3s color;
-}
-.navbar-brand img {
-  height: 50px;   /* Adjust logo height */
-  width: auto;    /* Keeps aspect ratio */
-  max-width: 100%; 
-  object-fit: contain;
-  margin-left: 20px;
-  /*filter: grayscale(100%) brightness(0) invert(1);*/
+  .navbar-brand {
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: 0.3s color;
+  }
 
-}
-/*@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 50px;
+    /* Adjust logo height */
+    width: auto;
+    /* Keeps aspect ratio */
+    max-width: 100%;
+    object-fit: contain;
+    margin-left: 20px;
+    /*filter: grayscale(100%) brightness(0) invert(1);*/
+
+  }
+
+  /*@media (max-width: 768px) {
   .navbar-brand img {
     height: 40px; Smaller logo on mobile 
   }
 }*/
-.donate-button{
-  background-color: #009970;
-  color: #fff;
-  font-size: 14px;
-  padding: 8px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: 0.3s background-color ;
-}
-
-.donate-button:hover{
-  background-color: #00b383;
-}
-
-.navbar-toggler{
-  border: none;
-  font-size: 1.25rem;
-}
-
-.navbar-toggler:focus, .btn-close:focus {
-  box-shadow: none;
-  outline: none;
-}
-
-.nav-link {
-  color: #666777;
-  font-weight: 500;
-  position: relative;
-}
-.nav-link:hover, .nav-link.active{
-  color: #000;
-}
-
-@media (min-width: 991px) {
- .nav-link::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 2px;
+  .donate-button {
     background-color: #009970;
-    visibility: hidden;
-    transition: 0.3s ease-in-out;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
   }
-  .nav-link:hover::before, .nav-link.active::before{
-    width: 100%;
-    visibility: visible;
+
+  .donate-button:hover {
+    background-color: #00b383;
   }
 
-}
+  .navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+  }
 
+  .navbar-toggler:focus,
+  .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+  }
 
+  .nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+  }
 
+  .nav-link:hover,
+  .nav-link.active {
+    color: #000;
+  }
 
-/* nav bar end */
-
-
-/* image */
-.counter-section {
-  position: relative;
-  background: url("Images/image.png") no-repeat center center/cover; 
-  min-height: 680px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: left;
-  padding: 120px 60px;
-}
-
-.overlay{
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.6);
-  z-index: 1;
-}
-
-.counter-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-}
-
-
-.big-title {
-  font-size: 2rem;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 20px;
-  line-height: 1.2;
-  color: white;
-}
-
-.desc {
-  font-size: 1rem;
-  line-height: 2;
-  margin-bottom: 15px;
-  color: wheat;
-}
-
-.label {
-  font-size: 1rem;
-  font-weight: bold;
-  color: rgb(85, 127, 233);
-  margin-bottom: 30px;
-}
-
-/*  hero section of about us */
-  body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #ffffff ;
-      color: white;
-    }
-
-    /* Tabs */
-    .tabs {
-      display: flex;
-      justify-content: flex-start;
-      border-bottom: 1px solid #414141;
-      margin: 20px;
-      color: #66677795;
-      font-family: 2rem;
-      font-family: "Poppins", sans-serif;
-      font-weight: 600;
-    }
-
-    .tab {
-      margin-right: 30px;
-      font-weight: bold;
-      cursor: pointer;
-      padding: 10px 0;
-      position: relative;
-      transition: color 0.3s ease;
-    }
-
-    .tab:hover,
-    .tab.active {
-      color: rgb(11, 11, 11);
-    }
-
-    .tab.active::after {
+  @media (min-width: 991px) {
+    .nav-link::before {
       content: "";
       position: absolute;
-      bottom: -1px;
-      left: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: #009970;
+      visibility: hidden;
+      transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
       width: 100%;
-      height: 3px;
-      background: black;
+      visibility: visible;
     }
 
-    /* Content Section */
-.content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 40px 20px;
-  max-width: 1100px;
-  margin: auto;
-  gap: 20px;
-}
-
-
-    .text {
-      flex: 1 1 50%;
-      padding: 20px;
-      color: rgb(12, 12, 12);
-      
-    }
-
-    .text h2 {
-      margin-top: 0;
-      font-family: "Poppins", sans-serif;
-    }
-
-    .image {
-      flex: 1 1 50%;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      
-    }
-
-.image img {
-  width: 100%;
-  max-width: 600px; 
-  height: 300px;
-  border-radius: 5px;
-  object-fit: cover; 
-}
-
-
-    .hidden {
-      display: none;
-    }
-
-    @media (max-width: 768px) {
-      .content {
-        flex-direction: column;
-      }
-    }
+  }
 
 
 
-    
 
-/* Footer Styling */
-.footer {
-  background: #000;
-  color: #f0f0f0;
-  padding: 50px 8% 20px;
-  font-family: Arial, sans-serif;
-}
+  /* nav bar end */
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
-}
 
-.footer-left {
-  flex: 1;
-  min-width: 280px;
-}
-
-.footer-left h2 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  color: #fff;
-}
-
-.footer-left p {
-  margin-bottom: 15px;
-  line-height: 1.6;
-  color: #ddd;
-}
-
-.social-links {
-  margin: 15px 0;
-}
-
-.social-links a {
-  display: inline-block;
-  margin-right: 15px;
-  font-size: 22px;
-  color: #f0f0f0;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #d32f2f;
-}
-
-.contact-info p {
-  margin: 6px 0;
-  font-size: 0.95rem;
-  color: #bbb;
-}
-
-/* Right Side (QR Box) */
-.footer-right {
-  flex: 1;
-  min-width: 220px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.qr-box {
-  text-align: center;
-  background: #111;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.qr-box img {
-  width: 200px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.qr-box p {
-  font-size: 0.9rem;
-  color: #faf9f9;
-}
-
-/* Bottom Bar */
-.footer-bottom {
-  text-align: center;
-  margin-top: 30px;
-  border-top: 1px solid #222;
-  padding-top: 15px;
-  font-size: 0.85rem;
-  color: #888;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
+  /* image */
+  .counter-section {
+    position: relative;
+    background: url("Images/image.png") no-repeat center center/cover;
+    min-height: 680px;
+    display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 120px 60px;
   }
-  .footer-right {
-    margin-top: 20px;
-  }
-}
 
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  .counter-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+  }
+
+
+  .big-title {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: white;
+  }
+
+  .desc {
+    font-size: 1rem;
+    line-height: 2;
+    margin-bottom: 15px;
+    color: wheat;
+  }
+
+  .label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(85, 127, 233);
+    margin-bottom: 30px;
+  }
+
+  /*  hero section of about us */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #ffffff;
+    color: white;
+  }
+
+  /* Tabs */
+  .tabs {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #414141;
+    margin: 20px;
+    color: #66677795;
+    font-family: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+
+  .tab {
+    margin-right: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 0;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  .tab:hover,
+  .tab.active {
+    color: rgb(11, 11, 11);
+  }
+
+  .tab.active::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: black;
+  }
+
+  /* Content Section */
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+    gap: 20px;
+  }
+
+
+  .text {
+    flex: 1 1 50%;
+    padding: 20px;
+    color: rgb(12, 12, 12);
+
+  }
+
+  .text h2 {
+    margin-top: 0;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .image {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+
+  .image img {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+
+  .hidden {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+  }
+
+
+
+
+
+  /* Footer Styling */
+  .footer {
+    background: #000;
+    color: #f0f0f0;
+    padding: 50px 8% 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .footer-left {
+    flex: 1;
+    min-width: 280px;
+  }
+
+  .footer-left h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  .footer-left p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #ddd;
+  }
+
+  .social-links {
+    margin: 15px 0;
+  }
+
+  .social-links a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 22px;
+    color: #f0f0f0;
+    transition: color 0.3s ease;
+  }
+
+  .social-links a:hover {
+    color: #d32f2f;
+  }
+
+  .contact-info p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+    color: #bbb;
+  }
+
+  /* Right Side (QR Box) */
+  .footer-right {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .qr-box {
+    text-align: center;
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .qr-box img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .qr-box p {
+    font-size: 0.9rem;
+    color: #faf9f9;
+  }
+
+  /* Bottom Bar */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #222;
+    padding-top: 15px;
+    font-size: 0.85rem;
+    color: #888;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-right {
+      margin-top: 20px;
+    }
+  }
 </style>
 
 <body>
@@ -422,7 +435,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="events.html">Upcoming Events</a></li>
                 <li><a class="dropdown-item" href="events.html">Past Events</a></li>
-                
+
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -437,23 +450,23 @@
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle mx-lg-2" href="team.html"  role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle mx-lg-2" href="team.html" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">Team</a>
-                <ul class="dropdown-menu">
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="team.html">Team</a></li>
-                <li><a class="dropdown-item" href="volunteers.html">Volunteers</a></li>
-               </ul>
+                <li><a class="dropdown-item" href="interns.html">Interns</a></li>
+              </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle mx-lg-2" href="about.html"  role="button" data-bs-toggle="dropdown"
+              <a class="nav-link dropdown-toggle mx-lg-2" href="about.html" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">About</a>
-               <ul class="dropdown-menu">
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                
+
                 <!-- Submenu container -->
                 <li class="dropdown-submenu">
                   <a class="dropdown-item dropdown-toggle" href="#">Audit Reports</a>
-            
+
                   <!-- Submenu items -->
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="Audit Report fy23  24..pdf">23-24 Audit Report</a></li>
@@ -463,7 +476,7 @@
                     <li><a class="dropdown-item" href="AUDITREPORT_19-20.pdf">19-20 Audit Report</a></li>
                   </ul>
                 </li>
-               </ul>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link mx-lg-2" href="contactus.html">contact us</a>
@@ -486,112 +499,120 @@
   </nav>
 
 
-  
-<!-----------------background image with titel------------>
- <section class="counter-section">
+
+  <!-----------------background image with titel------------>
+  <section class="counter-section">
     <div class="overlay"></div>
     <div class="counter-content">
-        <h1 class="big-title">ABOUT INDO SCIENCE</h1>
-        <p class="desc">
-            Indo Science Education Trust, a NON PROFIT, strives to bridge the gap between theoretical and practical STEM knowledge.
-            Our mission is to empower the next generation of professionals by providing hands-on experiences and fostering scientific
-            curiosity from an early age. 
-        </p>
-
-       
-    </div>
- </section>
-  
- <!-------hero section----------in about us----->
-    <div class="tabs">
-        <div class="tab active" data-target="today">Indo Science Today</div>
-        <div class="tab" data-target="forward">Looking Forward</div>
-        <div class="tab" data-target="history">A History of Innovation</div>
-    </div>
-    
-    <!-- Content -->
-    <div class="content">
-    
-        <!-- Indo Science Today -->
-        <div class="section" id="today">
-            <div class="text">
-                <h2>Indo Science Today</h2>
-                <p>
-                    Indo Science inspires young minds by turning curiosity into achievement.
-                    Through research, education, and innovation, we continue to impact thousands of students
-                    across the country, shaping the future of scientific discovery.
-                </p>
-            </div>
-            <div class="image">
-                <img src="Images/about1.jpg" alt="Indo Science Today">
-            </div>
-        </div>
-    
-        <!-- Looking Forward -->
-        <div class="section hidden" id="forward">
-            <div class="text">
-                <h2>Looking Forward</h2>
-                <p>
-                    Our vision is to expand Indo Science’s reach by introducing advanced programs,
-                    new learning technologies, and global collaborations. We aim to build future leaders
-                    who will drive innovation and exploration.
-                </p>
-            </div>
-            <div class="image">
-                <img src="Images/SPARK India Program1.jpg" alt="Looking Forward">
-            </div>
-        </div>
-    
-        <!-- A History of Innovation -->
-        <div class="section hidden" id="history">
-            <div class="text">
-                <h2>A History of Innovation</h2>
-                <p>
-                    Indo Science Education Trust is a non‑governmental trust (NGO) registered in Maharashtra, established on 19 April 2012.The organization’s mission: to promote science & technology education, vocational training, literacy — especially through STEAM (Science, Technology, Engineering, Arts, Mathematics) initiatives and outreach.
-                </p>
-            </div>
-            <div class="image">
-                <img src="Images/knowldge4.jpg" alt="History of Innovation">
-            </div>
-        </div>
-    
-    </div>
-  <!----------- footer -------------->
- <footer class="footer">
-  <div class="footer-container">
-
-    <!-- Left Section -->
-    <div class="footer-left">
-      <h2>Get in Touch</h2>
-      <p>
-        IndoScience is dedicated to spreading knowledge and innovation in space science.
-        Stay connected with us through our channels.
+      <h1 class="big-title">ABOUT INDO SCIENCE</h1>
+      <p class="desc">
+        Indo Science Education Trust, a NON PROFIT, strives to bridge the gap between theoretical and practical STEM
+        knowledge.
+        Our mission is to empower the next generation of professionals by providing hands-on experiences and fostering
+        scientific
+        curiosity from an early age.
       </p>
-      <div class="social-links">
-        <a href="https://www.instagram.com/_indosciedu_?igsh=NTc4MTIwNjQ2YQ==" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/indo-science-education-trust-pune?originalSubdomain=in" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://m.facebook.com/indoscience/" target="_blank"><i class="fab fa-facebook"></i></a>
+
+
+    </div>
+  </section>
+
+  <!-------hero section----------in about us----->
+  <div class="tabs">
+    <div class="tab active" data-target="today">Indo Science Today</div>
+    <div class="tab" data-target="forward">Looking Forward</div>
+    <div class="tab" data-target="history">A History of Innovation</div>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+
+    <!-- Indo Science Today -->
+    <div class="section" id="today">
+      <div class="text">
+        <h2>Indo Science Today</h2>
+        <p>
+          Indo Science inspires young minds by turning curiosity into achievement.
+          Through research, education, and innovation, we continue to impact thousands of students
+          across the country, shaping the future of scientific discovery.
+        </p>
       </div>
-      <div class="contact-info">
-        <p><strong>Address:</strong> 2, Kalaban Park, Pune, Near Walnut School road, Phursungi, Fursungi, Pune-412308, Maharashtra</p>
-        <p><strong>Phone:</strong> +91 9822090659</p>
-        <p><strong>Email:</strong> info@indoscience.org</p>
+      <div class="image">
+        <img src="Images/about1.jpg" alt="Indo Science Today">
       </div>
     </div>
 
-    <!-- Right Section -->
-    <div class="footer-right">
-      <div class="qr-box">
-        <img src="Images/WhatsappAdd.png" alt="IndoScience QR Code">
-        <p>Scan to connect with us</p>
+    <!-- Looking Forward -->
+    <div class="section hidden" id="forward">
+      <div class="text">
+        <h2>Looking Forward</h2>
+        <p>
+          Our vision is to expand Indo Science’s reach by introducing advanced programs,
+          new learning technologies, and global collaborations. We aim to build future leaders
+          who will drive innovation and exploration.
+        </p>
+      </div>
+      <div class="image">
+        <img src="Images/SPARK India Program1.jpg" alt="Looking Forward">
       </div>
     </div>
+
+    <!-- A History of Innovation -->
+    <div class="section hidden" id="history">
+      <div class="text">
+        <h2>A History of Innovation</h2>
+        <p>
+          Indo Science Education Trust is a non‑governmental trust (NGO) registered in Maharashtra, established on 19
+          April 2012.The organization’s mission: to promote science & technology education, vocational training,
+          literacy — especially through STEAM (Science, Technology, Engineering, Arts, Mathematics) initiatives and
+          outreach.
+        </p>
+      </div>
+      <div class="image">
+        <img src="Images/knowldge4.jpg" alt="History of Innovation">
+      </div>
+    </div>
+
   </div>
+  <!----------- footer -------------->
+  <footer class="footer">
+    <div class="footer-container">
 
-  <div class="footer-bottom">
-    <p>© 2025 IndoScience. All Rights Reserved.</p>
-  </div>
- </footer>
+      <!-- Left Section -->
+      <div class="footer-left">
+        <h2>Get in Touch</h2>
+        <p>
+          IndoScience is dedicated to spreading knowledge and innovation in space science.
+          Stay connected with us through our channels.
+        </p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/_indosciedu_?igsh=NTc4MTIwNjQ2YQ==" target="_blank"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/indo-science-education-trust-pune?originalSubdomain=in"
+            target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://m.facebook.com/indoscience/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="contact-info">
+          <p><strong>Address:</strong> 2, Kalaban Park, Pune, Near Walnut School road, Phursungi, Fursungi, Pune-412308,
+            Maharashtra</p>
+          <p><strong>Phone:</strong> +91 9822090659</p>
+          <p><strong>Email:</strong> info@indoscience.org</p>
+        </div>
+      </div>
+
+      <!-- Right Section -->
+      <div class="footer-right">
+        <div class="qr-box">
+          <img src="Images/WhatsappAdd.png" alt="IndoScience QR Code">
+          <p>Scan to connect with us</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 IndoScience. All Rights Reserved.</p>
+    </div>
+  </footer>
 
 
 
@@ -599,32 +620,32 @@
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 
-    <!---hero image in about us -->
-    <script>
-        const tabs = document.querySelectorAll(".tab");
-        const sections = document.querySelectorAll(".section");
+  <!---hero image in about us -->
+  <script>
+    const tabs = document.querySelectorAll(".tab");
+    const sections = document.querySelectorAll(".section");
 
-        tabs.forEach(tab => {
-            tab.addEventListener("mouseenter", () => {
-                // Remove active class from all tabs
-                tabs.forEach(t => t.classList.remove("active"));
-                // Add active to current
-                tab.classList.add("active");
+    tabs.forEach(tab => {
+      tab.addEventListener("mouseenter", () => {
+        // Remove active class from all tabs
+        tabs.forEach(t => t.classList.remove("active"));
+        // Add active to current
+        tab.classList.add("active");
 
-                // Hide all sections
-                sections.forEach(s => s.classList.add("hidden"));
+        // Hide all sections
+        sections.forEach(s => s.classList.add("hidden"));
 
-                // Show target
-                const target = document.getElementById(tab.dataset.target);
-                target.classList.remove("hidden");
-            });
-        });
-    </script>
-    <!---submenu script of audit -->
+        // Show target
+        const target = document.getElementById(tab.dataset.target);
+        target.classList.remove("hidden");
+      });
+    });
+  </script>
+  <!---submenu script of audit -->
   <script>
     document.querySelectorAll('.dropdown-submenu > a').forEach(function (element) {
       element.addEventListener("click", function (e) {
@@ -642,7 +663,7 @@
       });
     });
   </script>
-   
+
 </body>
 
 </html>

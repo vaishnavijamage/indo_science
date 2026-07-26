@@ -13,344 +13,352 @@
 
 </head>
 <style>
-    body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff !important ;
-  color : black;
-}
-
-.navbar{
-  background-color: white;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-
-}
-
-.navbar-brand{ 
-  font-weight: 500;
-  color: #009970;
-  font-size: 24px;
-  transition: 0.3s color;
-}
-.navbar-brand img {
-  height: 50px;   /* Adjust logo height */
-  width: auto;    /* Keeps aspect ratio */
-  max-width: 100%; 
-  object-fit: contain;
-  margin-left: 20px;
-  /*filter: grayscale(100%) brightness(0) invert(1);*/
-
-}
-
-
-
-/* Position submenu of audit reports*/
-
-/* basic position */
-.dropdown-submenu {
-  position: relative;
-}
-
-.dropdown-submenu > .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  margin-top: -0.5rem;
-}
-
-/* Desktop: show on hover */
-@media (min-width: 992px) {
-  .dropdown-submenu:hover > .dropdown-menu {
-    display: block;
-  }
-}
-
-/* Mobile: show on click */
-@media (max-width: 991px) {
-  .dropdown-submenu > a {
-    display: flex;
-    justify-content: space-between;
-  }
-  .dropdown-submenu:focus-within > .dropdown-menu {
-    display: block;
-    position: static;
+  body {
+    height: 100%;
     margin: 0;
+    padding: 0;
+    background-color: #ffffff !important;
+    color: black;
   }
-}
+
+  .navbar {
+    background-color: white;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .navbar-brand {
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+    transition: 0.3s color;
+  }
+
+  .navbar-brand img {
+    height: 50px;
+    /* Adjust logo height */
+    width: auto;
+    /* Keeps aspect ratio */
+    max-width: 100%;
+    object-fit: contain;
+    margin-left: 20px;
+    /*filter: grayscale(100%) brightness(0) invert(1);*/
+
+  }
 
 
-/*audit report close here*/
+
+  /* Position submenu of audit reports*/
+
+  /* basic position */
+  .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu>.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: -0.5rem;
+  }
+
+  /* Desktop: show on hover */
+  @media (min-width: 992px) {
+    .dropdown-submenu:hover>.dropdown-menu {
+      display: block;
+    }
+  }
+
+  /* Mobile: show on click */
+  @media (max-width: 991px) {
+    .dropdown-submenu>a {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .dropdown-submenu:focus-within>.dropdown-menu {
+      display: block;
+      position: static;
+      margin: 0;
+    }
+  }
+
+
+  /*audit report close here*/
 
 
 
-/*@media (max-width: 768px) {
+  /*@media (max-width: 768px) {
   .navbar-brand img {
     height: 40px; Smaller logo on mobile 
   }
 }*/
-.donate-button{
-  background-color: #009970;
-  color: #fff;
-  font-size: 14px;
-  padding: 8px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: 0.3s background-color ;
-}
-
-.donate-button:hover{
-  background-color: #00b383;
-}
-
-.navbar-toggler{
-  border: none;
-  font-size: 1.25rem;
-}
-
-.navbar-toggler:focus, .btn-close:focus {
-  box-shadow: none;
-  outline: none;
-}
-
-.nav-link {
-  color: #666777;
-  font-weight: 500;
-  position: relative;
-}
-.nav-link:hover, .nav-link.active{
-  color: #000;
-}
-
-@media (min-width: 991px) {
- .nav-link::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 2px;
+  .donate-button {
     background-color: #009970;
-    visibility: hidden;
-    transition: 0.3s ease-in-out;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
   }
-  .nav-link:hover::before, .nav-link.active::before{
-    width: 100%;
-    visibility: visible;
+
+  .donate-button:hover {
+    background-color: #00b383;
   }
 
-}
+  .navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+  }
 
-/* contact us */
-   body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #ffffff;
-      line-height: 1.6;
+  .navbar-toggler:focus,
+  .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+  }
 
+  .nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: #000;
+  }
+
+  @media (min-width: 991px) {
+    .nav-link::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: #009970;
+      visibility: hidden;
+      transition: 0.3s ease-in-out;
     }
 
-    .contact-section {
-       padding: 150px 30px 70px 50px; /* increased top padding */
-       text-align: center;
-      
+    .nav-link:hover::before,
+    .nav-link.active::before {
+      width: 100%;
+      visibility: visible;
     }
 
+  }
+
+  /* contact us */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+
+  }
+
+  .contact-section {
+    padding: 150px 30px 70px 50px;
+    /* increased top padding */
+    text-align: center;
+
+  }
+
+  .contact-section h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: rgba(0, 0, 0, 0.944);
+  }
+
+  .contact-section p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    color: black;
+    text-align: center;
+  }
+
+  .contact-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    margin-left: 19%;
+    text-align: left;
+  }
+
+  .contact-details div h3 {
+    margin-bottom: 10px;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+
+  .contact-details h4 {
+    color: black;
+    font-size: 0.95rem;
+
+  }
+
+  .contact-details div p,
+  .contact-details div a {
+    color: black;
+    font-size: 0.95rem;
+    text-decoration: none;
+
+  }
+
+  .social-links {
+    margin-top: 30px;
+  }
+
+  .social-links a {
+    margin: 0 10px;
+    color: #020202c6;
+    font-size: 1.4rem;
+    transition: color 0.3s ease;
+  }
+
+  .social-links a:hover {
+    color: black;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
     .contact-section h1 {
-      font-size: 2rem;
-      margin-bottom: 15px;
-      font-weight: 600;
-      font-family: "Poppins", sans-serif;
-      color: rgba(0, 0, 0, 0.944);
-    }
-
-    .contact-section p {
-      max-width: 700px;
-      margin: 0 auto 25px;
-      color: black;
-      text-align: center;
+      font-size: 1.6rem;
     }
 
     .contact-details {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-      margin-left: 19%;
-      text-align: left;
+      gap: 20px;
     }
+  }
 
-    .contact-details div h3 {
-      margin-bottom: 10px;
-      color: black;
-      font-family: "Poppins", sans-serif;
-      font-weight: 500;
-    }
+  /* Location Map */
+  .map {
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
 
-    .contact-details h4{
-      color: black;
-      font-size: 0.95rem;
-      
-    }
+  .map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+  }
 
-    .contact-details div p,
-    .contact-details div a {
-      color: black;
-      font-size: 0.95rem;
-      text-decoration: none;
-      
-    }
 
-    .social-links {
-      margin-top: 30px;
-    }
+  /* footer ----------------------- */
 
-    .social-links a {
-      margin: 0 10px;
-      color: #020202c6;
-      font-size: 1.4rem;
-      transition: color 0.3s ease;
-    }
+  .footer {
+    background: #000;
+    color: #f0f0f0;
+    padding: 50px 8% 20px;
+    font-family: "Poppins", sans-serif;
+  }
 
-    .social-links a:hover {
-      color: black;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      .contact-section h1 {
-        font-size: 1.6rem;
-      }
-      .contact-details {
-        gap: 20px;
-      }
-    }
-
-    /* Location Map */
-    .map {
-      margin-top: 40px;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .map iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-    }
-   
-    
-/* footer ----------------------- */
-
-.footer {
-  background: #000;
-  color: #f0f0f0;
-  padding: 50px 8% 20px;
-  font-family: "Poppins", sans-serif;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.footer-left {
-  flex: 1;
-  min-width: 280px;
-}
-
-.footer-left h2 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: #ffffffda;
-}
-
-.footer-left p {
-  margin-bottom: 15px;
-  line-height: 1.6;
-  color: #ddd;
-}
-
-.social-links {
-  margin: 15px 0;
-}
-
-.social-links a {
-  display: inline-block;
-  margin-right: 15px;
-  font-size: 22px;
-  color: #f0f0f0;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #d32f2f;
-}
-
-.contact-info p {
-  margin: 6px 0;
-  font-size: 0.95rem;
-  color: #bbb;
-}
-
-/* Right Side (QR Box) */
-.footer-right {
-  flex: 1;
-  min-width: 220px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.qr-box {
-  text-align: center;
-  background: #111;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-.qr-box img {
-  width: 200px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.qr-box p {
-  font-size: 0.9rem;
-  color: #ccc;
-}
-
-/* Bottom Bar */
-.footer-bottom {
-  text-align: center;
-  margin-top: 30px;
-  border-top: 1px solid #222;
-  padding-top: 15px;
-  font-size: 0.85rem;
-  color: #888;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
   .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
   }
+
+  .footer-left {
+    flex: 1;
+    min-width: 280px;
+  }
+
+  .footer-left h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffffffda;
+  }
+
+  .footer-left p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #ddd;
+  }
+
+  .social-links {
+    margin: 15px 0;
+  }
+
+  .social-links a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 22px;
+    color: #f0f0f0;
+    transition: color 0.3s ease;
+  }
+
+  .social-links a:hover {
+    color: #d32f2f;
+  }
+
+  .contact-info p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+    color: #bbb;
+  }
+
+  /* Right Side (QR Box) */
   .footer-right {
-    margin-top: 20px;
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-}
 
+  .qr-box {
+    text-align: center;
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+  }
 
+  .qr-box img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
 
+  .qr-box p {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
 
+  /* Bottom Bar */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #222;
+    padding-top: 15px;
+    font-size: 0.85rem;
+    color: #888;
+  }
 
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-right {
+      margin-top: 20px;
+    }
+  }
 </style>
+
 <body>
 
   <!-- Navbar -->
@@ -368,7 +376,7 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
             <li class="nav-item ">
-              <a class="nav-link "  href="index.html">Home</a>
+              <a class="nav-link " href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle mx-lg-2" href="#" role="button" data-bs-toggle="dropdown"
@@ -376,7 +384,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="events.html">Upcoming Events</a></li>
                 <li><a class="dropdown-item" href="events.html">Past Events</a></li>
-                
+
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -395,19 +403,19 @@
                 aria-expanded="false">Team</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="team.html">Team</a></li>
-                <li><a class="dropdown-item" href="volunteers.html">Volunteers</a></li>
-               </ul>
+                <li><a class="dropdown-item" href="interns.html">Interns</a></li>
+              </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle mx-lg-2" href="about.html" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">About</a>
-               <ul class="dropdown-menu">
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="about.html">About Us</a></li>
-                
+
                 <!-- Submenu container -->
                 <li class="dropdown-submenu">
                   <a class="dropdown-item dropdown-toggle" href="#">Audit Reports</a>
-            
+
                   <!-- Submenu items -->
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="Audit Report fy23  24..pdf">23-24 Audit Report</a></li>
@@ -417,7 +425,7 @@
                     <li><a class="dropdown-item" href="AUDITREPORT_19-20.pdf">19-20 Audit Report</a></li>
                   </ul>
                 </li>
-               </ul>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link mx-lg-2" href="contactus.html">contact us</a>
@@ -439,12 +447,12 @@
     </div>
   </nav>
 
-  
-   <section class="contact-section">
+
+  <section class="contact-section">
     <h1>Contact Us</h1>
-    
+
     <p>
-      
+
       Reach out to us through the details below or visit us at our location.
       At Indo Science, we firmly believe that cultivating scientific thinking
       has the potential to tackle various societal challenges, including employment
@@ -478,82 +486,84 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242072.20716341518!2d73.704856278125!3d18.55697886453841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2e9f7690c7409%3A0xa69fa1db8e4317b3!2sKalaban%20Park!5e0!3m2!1sen!2sin!4v1764257510319!5m2!1sen!2sin"
         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+      </iframe>
 
   </section>
 
 
 
   <!----------- footer -------------->
-<footer class="footer">
-  <div class="footer-container">
+  <footer class="footer">
+    <div class="footer-container">
 
-    <!-- Left Section -->
-    <div class="footer-left">
-      <h2>Get in Touch</h2>
-      <p>
-        IndoScience is dedicated to spreading knowledge and innovation in space science.
-        Stay connected with us through our channels.
-      </p>
-      <div class="social-links">
-        <a href="https://www.instagram.com/_indosciedu_?igsh=NTc4MTIwNjQ2YQ==" target="_blank"><i
-            class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/indo-science-education-trust-pune?originalSubdomain=in"
-          target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://m.facebook.com/indoscience/" target="_blank"><i class="fab fa-facebook"></i></a>
-      </div>
-      <div class="contact-info">
-        <p><strong>Address:</strong> 2, Kalaban Park, Pune, Near Walnut School road, Phursungi,Pune-412308, Maharashtra
+      <!-- Left Section -->
+      <div class="footer-left">
+        <h2>Get in Touch</h2>
+        <p>
+          IndoScience is dedicated to spreading knowledge and innovation in space science.
+          Stay connected with us through our channels.
         </p>
-        <p><strong>Phone:</strong> +91 9822090659</p>
-        <p><strong>Email:</strong> info@indoscience.org</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/_indosciedu_?igsh=NTc4MTIwNjQ2YQ==" target="_blank"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/indo-science-education-trust-pune?originalSubdomain=in"
+            target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://m.facebook.com/indoscience/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="contact-info">
+          <p><strong>Address:</strong> 2, Kalaban Park, Pune, Near Walnut School road, Phursungi,Pune-412308,
+            Maharashtra
+          </p>
+          <p><strong>Phone:</strong> +91 9822090659</p>
+          <p><strong>Email:</strong> info@indoscience.org</p>
+        </div>
+
+        <div class="buttons">
+          <a href="InternForm.html"
+            style="padding:2px 2px; background:#0202029f; color:rgba(223, 139, 65, 0.748); border-radius:2px; text-decoration:none; font-weight: 10px;">Apply
+            For ISRO Internship</a>
+        </div>
       </div>
 
-      <div class="buttons">
-        <a href="InternForm.html"
-          style="padding:2px 2px; background:#0202029f; color:rgba(223, 139, 65, 0.748); border-radius:2px; text-decoration:none; font-weight: 10px;">Apply
-          For ISRO Internship</a>
+      <!-- Right Section -->
+      <div class="footer-right">
+        <div class="qr-box">
+          <img src="Images/WhatsappAdd.png" alt="IndoScience QR Code">
+          <p>Scan to connect with us</p>
+        </div>
       </div>
     </div>
 
-    <!-- Right Section -->
-    <div class="footer-right">
-      <div class="qr-box">
-        <img src="Images/WhatsappAdd.png" alt="IndoScience QR Code">
-        <p>Scan to connect with us</p>
-      </div>
+    <div class="footer-bottom">
+      <p>© 2025 IndoScience. All Rights Reserved.</p>
     </div>
-  </div>
+  </footer>
 
-  <div class="footer-bottom">
-    <p>© 2025 IndoScience. All Rights Reserved.</p>
-  </div>
-</footer>
+  <!---footer closed here------>
 
- <!---footer closed here------>
-
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
-    <!---submenu script of audit -->
+  <!---submenu script of audit -->
   <script>
-document.querySelectorAll('.dropdown-submenu > a').forEach(function(element){
-  element.addEventListener("click", function (e) {
-    e.preventDefault();          // Stop link click
-    e.stopPropagation();         // Stop Bootstrap from closing menu
+    document.querySelectorAll('.dropdown-submenu > a').forEach(function (element) {
+      element.addEventListener("click", function (e) {
+        e.preventDefault();          // Stop link click
+        e.stopPropagation();         // Stop Bootstrap from closing menu
 
-    let submenu = this.nextElementSibling;
+        let submenu = this.nextElementSibling;
 
-    // Toggle submenu
-    if (submenu.style.display === "block") {
-      submenu.style.display = "none";
-    } else {
-      submenu.style.display = "block";
-    }
-  });
-});
-</script>
+        // Toggle submenu
+        if (submenu.style.display === "block") {
+          submenu.style.display = "none";
+        } else {
+          submenu.style.display = "block";
+        }
+      });
+    });
+  </script>
 
 
 </body>
+
 </html>

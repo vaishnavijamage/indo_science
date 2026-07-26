@@ -13,68 +13,69 @@
 
   <style>
     .navbar {
-        background-color: white;
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 
     }
 
     .navbar-brand {
-        font-weight: 500;
-        color: #009970;
-        font-size: 24px;
-        transition: 0.3s color;
+      font-weight: 500;
+      color: #009970;
+      font-size: 24px;
+      transition: 0.3s color;
     }
 
     .navbar-brand img {
-        height: 50px;
-        /* Adjust logo height */
-        width: auto;
-        /* Keeps aspect ratio */
-        max-width: 100%;
-        object-fit: contain;
-        margin-left: 20px;
-        /*filter: grayscale(100%) brightness(0) invert(1);*/
+      height: 50px;
+      /* Adjust logo height */
+      width: auto;
+      /* Keeps aspect ratio */
+      max-width: 100%;
+      object-fit: contain;
+      margin-left: 20px;
+      /*filter: grayscale(100%) brightness(0) invert(1);*/
 
     }
 
-    
-/* Position submenu of audit reports*/
 
-/* basic position */
-.dropdown-submenu {
-  position: relative;
-}
+    /* Position submenu of audit reports*/
 
-.dropdown-submenu > .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  margin-top: -0.5rem;
-}
+    /* basic position */
+    .dropdown-submenu {
+      position: relative;
+    }
 
-/* Desktop: show on hover */
-@media (min-width: 992px) {
-  .dropdown-submenu:hover > .dropdown-menu {
-    display: block;
-  }
-}
+    .dropdown-submenu>.dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 100%;
+      margin-top: -0.5rem;
+    }
 
-/* Mobile: show on click */
-@media (max-width: 991px) {
-  .dropdown-submenu > a {
-    display: flex;
-    justify-content: space-between;
-  }
-  .dropdown-submenu:focus-within > .dropdown-menu {
-    display: block;
-    position: static;
-    margin: 0;
-  }
-}
+    /* Desktop: show on hover */
+    @media (min-width: 992px) {
+      .dropdown-submenu:hover>.dropdown-menu {
+        display: block;
+      }
+    }
+
+    /* Mobile: show on click */
+    @media (max-width: 991px) {
+      .dropdown-submenu>a {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .dropdown-submenu:focus-within>.dropdown-menu {
+        display: block;
+        position: static;
+        margin: 0;
+      }
+    }
 
 
-/*audit report close here*/
+    /*audit report close here*/
 
     /*@media (max-width: 768px) {
   .navbar-brand img {
@@ -82,252 +83,249 @@
   }
 }*/
     .donate-button {
-        background-color: #009970;
-        color: #fff;
-        font-size: 14px;
-        padding: 8px 20px;
-        border-radius: 50px;
-        text-decoration: none;
-        transition: 0.3s background-color;
+      background-color: #009970;
+      color: #fff;
+      font-size: 14px;
+      padding: 8px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: 0.3s background-color;
     }
 
     .donate-button:hover {
-        background-color: #00b383;
+      background-color: #00b383;
     }
 
     .navbar-toggler {
-        border: none;
-        font-size: 1.25rem;
+      border: none;
+      font-size: 1.25rem;
     }
 
     .navbar-toggler:focus,
     .btn-close:focus {
-        box-shadow: none;
-        outline: none;
+      box-shadow: none;
+      outline: none;
     }
 
     .nav-link {
-        color: #666777;
-        font-weight: 500;
-        position: relative;
+      color: #666777;
+      font-weight: 500;
+      position: relative;
     }
 
     .nav-link:hover,
     .nav-link.active {
-        color: #000;
+      color: #000;
     }
 
     @media (min-width: 991px) {
-        .nav-link::before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 2px;
-            background-color: #009970;
-            visibility: hidden;
-            transition: 0.3s ease-in-out;
-        }
+      .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #009970;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+      }
 
-        .nav-link:hover::before,
-        .nav-link.active::before {
-            width: 100%;
-            visibility: visible;
-        }
+      .nav-link:hover::before,
+      .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+      }
 
     }
 
     /*    top heading section */
     /* Top Section */
-        .top-section {
-            background-color: #003b4a;
-            color: #ffffff;
-            text-align: center;
-            padding: 115px 20px 80px; 
-        }
+    .top-section {
+      background-color: #003b4a;
+      color: #ffffff;
+      text-align: center;
+      padding: 115px 20px 80px;
+    }
 
-        .top-section h1 {
-            margin-bottom: 25px;
-            font-size: 2rem;
-            font-family: "Poppins", sans-serif;
-        }
+    .top-section h1 {
+      margin-bottom: 25px;
+      font-size: 2rem;
+      font-family: "Poppins", sans-serif;
+    }
 
-        .top-section p {
-            max-width: 600px;
-            margin: 0 auto 20px;
-            line-height: 1.6;
-        }
+    .top-section p {
+      max-width: 600px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
 
-        
-        /* Business Partnerships Section */
-        .partnerships-section {
-            background-color: #ffffff;
-            padding: 80px 20px 60px;
-            text-align: center;
-            margin-top: 40px;
-        }
 
-        .partnerships-section h2 {
-            margin-bottom: 40px;
-            font-size: 2rem;
-            font-weight: 600;
-            font-family: "Poppins", sans-serif;
-            color: #222;
-        }
+    /* Business Partnerships Section */
+    .partnerships-section {
+      background-color: #ffffff;
+      padding: 80px 20px 60px;
+      text-align: center;
+      margin-top: 40px;
+    }
 
-        .icons-row {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 50px;
-            margin-bottom: 40px;
-        }
+    .partnerships-section h2 {
+      margin-bottom: 40px;
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      color: #222;
+    }
 
-        .icons-row img {
-            width: 60px;
-            height: 60px;
-        }
+    .icons-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 50px;
+      margin-bottom: 40px;
+    }
 
-        .wide-paragraph {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 30px;
-            font-size: 1.1em;
-            color: #333;
-            line-height: 1.7;
-        }
+    .icons-row img {
+      width: 60px;
+      height: 60px;
+    }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .icons-row {
-                gap: 20px;
-            }
+    .wide-paragraph {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 30px;
+      font-size: 1.1em;
+      color: #333;
+      line-height: 1.7;
+    }
 
-            .icons-row img {
-                width: 50px;
-                height: 50px;
-            }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .icons-row {
+        gap: 20px;
+      }
 
-            .wide-paragraph {
-                font-size: 1em;
-                padding: 0 20px;
-            }
-        }
-             .wide-paragraph p{
-              text-align: left;
-             }
-        
-        /* Footer Styling */
-        .footer {
-            background: #000;
-            color: #f0f0f0;
-            padding: 50px 8% 20px;
-            font-family: Arial, sans-serif;
-        }
+      .icons-row img {
+        width: 50px;
+        height: 50px;
+      }
 
-        .footer-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 40px;
-        }
+      .wide-paragraph {
+        font-size: 1em;
+        padding: 0 20px;
+      }
+    }
 
-        .footer-left {
-            flex: 1;
-            min-width: 280px;
-        }
+    .wide-paragraph p {
+      text-align: left;
+    }
 
-        .footer-left h2 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            color: #fff;
-        }
+    /* Footer Styling */
+    .footer {
+      background: #000;
+      color: #f0f0f0;
+      padding: 50px 8% 20px;
+      font-family: Arial, sans-serif;
+    }
 
-        .footer-left p {
-            margin-bottom: 15px;
-            line-height: 1.6;
-            color: #ddd;
-        }
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
 
-        .social-links {
-            margin: 15px 0;
-        }
+    .footer-left {
+      flex: 1;
+      min-width: 280px;
+    }
 
-        .social-links a {
-            display: inline-block;
-            margin-right: 15px;
-            font-size: 22px;
-            color: #f0f0f0;
-            transition: color 0.3s ease;
-        }
+    .footer-left h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #fff;
+    }
 
-        .social-links a:hover {
-            color: #d32f2f;
-        }
+    .footer-left p {
+      margin-bottom: 15px;
+      line-height: 1.6;
+      color: #ddd;
+    }
 
-        .contact-info p {
-            margin: 6px 0;
-            font-size: 0.95rem;
-            color: #bbb;
-        }
+    .social-links {
+      margin: 15px 0;
+    }
 
-        /* Right Side (QR Box) */
-        .footer-right {
-            flex: 1;
-            min-width: 220px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    .social-links a {
+      display: inline-block;
+      margin-right: 15px;
+      font-size: 22px;
+      color: #f0f0f0;
+      transition: color 0.3s ease;
+    }
 
-        .qr-box {
-            text-align: center;
-            background: #111;
-            padding: 20px;
-            border-radius: 8px;
-        }
+    .social-links a:hover {
+      color: #d32f2f;
+    }
 
-        .qr-box img {
-            width: 200px;
-            height: auto;
-            margin-bottom: 10px;
-        }
+    .contact-info p {
+      margin: 6px 0;
+      font-size: 0.95rem;
+      color: #bbb;
+    }
 
-        .qr-box p {
-            font-size: 0.9rem;
-            color: #ccc;
-        }
+    /* Right Side (QR Box) */
+    .footer-right {
+      flex: 1;
+      min-width: 220px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        /* Bottom Bar */
-        .footer-bottom {
-            text-align: center;
-            margin-top: 30px;
-            border-top: 1px solid #222;
-            padding-top: 15px;
-            font-size: 0.85rem;
-            color: #888;
-        }
+    .qr-box {
+      text-align: center;
+      background: #111;
+      padding: 20px;
+      border-radius: 8px;
+    }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .footer-container {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
+    .qr-box img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+    }
 
-            .footer-right {
-                margin-top: 20px;
-            }
-        }
-   
+    .qr-box p {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
 
-        
+    /* Bottom Bar */
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      border-top: 1px solid #222;
+      padding-top: 15px;
+      font-size: 0.85rem;
+      color: #888;
+    }
 
-    </style>
-  </head>
+    /* Responsive */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-right {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
 
 <body>
 
@@ -346,7 +344,7 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
             <li class="nav-item ">
-              <a class="nav-link "  href="index.html">Home</a>
+              <a class="nav-link " href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle mx-lg-2" href="#" role="button" data-bs-toggle="dropdown"
@@ -354,7 +352,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="events.html">Upcoming Events</a></li>
                 <li><a class="dropdown-item" href="events.html">Past Events</a></li>
-                
+
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -371,21 +369,21 @@
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle mx-lg-2" href="team.html" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">Team</a>
-                 <ul class="dropdown-menu">
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="team.html">Team</a></li>
-                <li><a class="dropdown-item" href="volunteers.html">Volunteers</a></li>
-               </ul>
+                <li><a class="dropdown-item" href="interns.html">Interns</a></li>
+              </ul>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle mx-lg-2" href="about.html" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">About</a>
-                 <ul class="dropdown-menu">
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="about.html">About Us</a></li>
 
                 <!-- Submenu container -->
                 <li class="dropdown-submenu">
                   <a class="dropdown-item dropdown-toggle" href="#">Audit Reports</a>
-            
+
                   <!-- Submenu items -->
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="Audit Report fy23  24..pdf">23-24 Audit Report</a></li>
@@ -395,7 +393,7 @@
                     <li><a class="dropdown-item" href="AUDITREPORT_19-20.pdf">19-20 Audit Report</a></li>
                   </ul>
                 </li>
-               </ul>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link mx-lg-2" href="contactus.html">contact us</a>
@@ -418,122 +416,147 @@
   </nav>
 
 
-  
-    <!-- Top Hero Section partnership section  -->
+
+  <!-- Top Hero Section partnership section  -->
 
 
-    
-    <!-- Partnerships Section -->
-    <section class="partnerships-section">
-        <h2>ISRO Space Tutor </h2>
-          <!-- Full-width Paragraph -->
-        <div class="wide-paragraph">
-            <p>
-              Welcome to ISRO Space Tutor, your celestial gateway! Our devoted team of space aficionados is driven by a passion for delivering the marvels of space exploration and knowledge right to your fingertips.<br><br>
-              <b style="color: rgba(18, 119, 153)">What We Offer:</b><br><br>
-              <b>Educational Content:</b>
-              Delve into a treasure trove of informative resources that unravel the mysteries of space science.<br><br>
 
-              <b>Setting up a Space Lab:</b>
-              Explore our initiative to establish a cutting-edge Space Lab, fostering hands-on experimentation and innovation, aimed at nurturing the next generation of space scientists and engineers.<br><br>
+  <!-- Partnerships Section -->
+  <section class="partnerships-section">
+    <h2>ISRO Space Tutor </h2>
+    <!-- Full-width Paragraph -->
+    <div class="wide-paragraph">
+      <p>
+        Welcome to ISRO Space Tutor, your celestial gateway! Our devoted team of space aficionados is driven by a
+        passion for delivering the marvels of space exploration and knowledge right to your fingertips.<br><br>
+        <b style="color: rgba(18, 119, 153)">What We Offer:</b><br><br>
+        <b>Educational Content:</b>
+        Delve into a treasure trove of informative resources that unravel the mysteries of space science.<br><br>
 
-              <b>Virtual Space Tours:</b>
-              Embark on captivating virtual journeys through the cosmos, experiencing the grandeur of celestial bodies and distant galaxies.<br><br>
+        <b>Setting up a Space Lab:</b>
+        Explore our initiative to establish a cutting-edge Space Lab, fostering hands-on experimentation and innovation,
+        aimed at nurturing the next generation of space scientists and engineers.<br><br>
 
-              <b>Q&A Sessions:</b>
-              Engage with our experts and satiate your curiosity by asking questions about the cosmos and its enigmas.<br><br>
+        <b>Virtual Space Tours:</b>
+        Embark on captivating virtual journeys through the cosmos, experiencing the grandeur of celestial bodies and
+        distant galaxies.<br><br>
 
-              <b>Live Events:</b>
-              Immerse yourself in live events where we unveil the latest discoveries, technological advancements, and insights from the realm of space.<br><br>
+        <b>Q&A Sessions:</b>
+        Engage with our experts and satiate your curiosity by asking questions about the cosmos and its enigmas.<br><br>
 
-              <b>Space Exhibition:</b>
-              Immerse yourself in our dynamic space exhibition, where you can interact with hands-on displays, models, and simulations that bring the cosmos closer than ever before.<br><br>
+        <b>Live Events:</b>
+        Immerse yourself in live events where we unveil the latest discoveries, technological advancements, and insights
+        from the realm of space.<br><br>
 
-              <b>Scientist Interactive Sessions:</b>
-              Connect with prominent space scientists in intimate sessions that offer a rare opportunity to learn directly from those at the forefront of space exploration.<br><br>
+        <b>Space Exhibition:</b>
+        Immerse yourself in our dynamic space exhibition, where you can interact with hands-on displays, models, and
+        simulations that bring the cosmos closer than ever before.<br><br>
 
-              <b>Engaging Quizzes:</b>
-              Test your space knowledge with interactive quizzes that entertain as they educate.<br><br>
+        <b>Scientist Interactive Sessions:</b>
+        Connect with prominent space scientists in intimate sessions that offer a rare opportunity to learn directly
+        from those at the forefront of space exploration.<br><br>
 
-              <b>Our Commitment:</b>
-              As ISRO Space Tutors, we pledge to provide meticulously accurate and up-to-date information, nurturing a profound reverence for the wonders of space science. Our mission is to render learning about space not just accessible, but enjoyable and enthralling for learners of all ages.<br><br>
+        <b>Engaging Quizzes:</b>
+        Test your space knowledge with interactive quizzes that entertain as they educate.<br><br>
 
-              <b>Join Us on the Cosmic Journey:</b>
-              Whether you're a student hungry for knowledge, an educator shaping young minds, a fervent space enthusiast, or a curious mind seeking answers, ISRO Space Tutor extends an open invitation to accompany us on this cosmic odyssey of exploration and revelation. Together, let's embark on a mission to unfurl the breathtaking wonders of space, expanding our horizons and understanding in unison.<br><br>
+        <b>Our Commitment:</b>
+        As ISRO Space Tutors, we pledge to provide meticulously accurate and up-to-date information, nurturing a
+        profound reverence for the wonders of space science. Our mission is to render learning about space not just
+        accessible, but enjoyable and enthralling for learners of all ages.<br><br>
 
-            </p>
+        <b>Join Us on the Cosmic Journey:</b>
+        Whether you're a student hungry for knowledge, an educator shaping young minds, a fervent space enthusiast, or a
+        curious mind seeking answers, ISRO Space Tutor extends an open invitation to accompany us on this cosmic odyssey
+        of exploration and revelation. Together, let's embark on a mission to unfurl the breathtaking wonders of space,
+        expanding our horizons and understanding in unison.<br><br>
+
+      </p>
+    </div>
+
+
+    <h2>ISRO Merchandiser </h2>
+    <!-- Full-width Paragraph -->
+    <div class="wide-paragraph">
+      <p>
+        Welcome to the ISRO Merchandiser, your one-stop destination for space-themed products and memorabilia inspired
+        by India's esteemed space agency, ISRO. We are dedicated to celebrating the achievements and innovations of ISRO
+        through a captivating array of merchandise that lets you bring the wonders of space exploration to life.<br><br>
+        <b style="color: rgb(18, 119, 153);">What We Offer:</b><br><br>
+        <b>Explore Our Stellar Collection:</b>
+        Our curated collection of ISRO-themed merchandise offers a wide range of products that cater to space
+        enthusiasts of all ages. From clothing and accessories adorned with iconic ISRO mission logos to home decor
+        featuring stunning images of space, there's something for everyone to cherish.<br><br>
+
+        <b>Apparel:</b>
+        Discover a galaxy of t-shirts, hoodies, and caps adorned with striking designs that pay homage to ISRO's
+        landmark missions and space achievements.<br><br>
+
+
+        <b>Accessories:</b>
+        Elevate your style with our range of space-themed accessories, including tote bags, phone cases, and enamel pins
+        that showcase your passion for space exploration.<br><br>
+
+        <b>Home Decor:</b>
+        Transform your living space into a celestial sanctuary with our collection of space-themed posters, wall art,
+        and decorative items that capture the awe-inspiring beauty of the universe.<br><br>
+
+        <b>Stationery:</b>
+        Unleash your creativity with our space-inspired stationery, including notebooks, pens, and stickers that make
+        every writing experience a cosmic adventure.<br><br>
+
+        <b>Embrace the Spirit of Space Exploration:</b>
+        At ISRO Merchandiser, we are committed to delivering high-quality products that encapsulate the spirit of space
+        exploration. Each piece is carefully designed to evoke a sense of wonder, inspiring you to dream big and reach
+        for the stars.
+        Supporting ISRO's Endeavors: Shop with Us: Join us on this cosmic adventure and explore our captivating range of
+        ISRO-themed merchandise. Contact us to start your space-inspired shopping experience today.
+
+
+      </p>
+    </div>
+  </section>
+
+
+  <!----------- footer -------------->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Left Section -->
+      <div class="footer-left">
+        <h2>Get in Touch</h2>
+        <p>
+          IndoScience is dedicated to spreading knowledge and innovation in space science.
+          Stay connected with us through our channels.
+        </p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/_indosciedu_?igsh=NTc4MTIwNjQ2YQ==" target="_blank"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/indo-science-education-trust-pune?originalSubdomain=in"
+            target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://m.facebook.com/indoscience/" target="_blank"><i class="fab fa-facebook"></i></a>
         </div>
-
-
-        <h2>ISRO Merchandiser </h2>
-          <!-- Full-width Paragraph -->
-        <div class="wide-paragraph">
-            <p>
-              Welcome to the ISRO Merchandiser, your one-stop destination for space-themed products and memorabilia inspired by India's esteemed space agency, ISRO. We are dedicated to celebrating the achievements and innovations of ISRO through a captivating array of merchandise that lets you bring the wonders of space exploration to life.<br><br>
-              <b style="color: rgb(18, 119, 153);">What We Offer:</b><br><br>
-              <b>Explore Our Stellar Collection:</b>
-              Our curated collection of ISRO-themed merchandise offers a wide range of products that cater to space enthusiasts of all ages. From clothing and accessories adorned with iconic ISRO mission logos to home decor featuring stunning images of space, there's something for everyone to cherish.<br><br>
-
-              <b>Apparel:</b>
-              Discover a galaxy of t-shirts, hoodies, and caps adorned with striking designs that pay homage to ISRO's landmark missions and space achievements.<br><br>
-
-
-              <b>Accessories:</b>
-               Elevate your style with our range of space-themed accessories, including tote bags, phone cases, and enamel pins that showcase your passion for space exploration.<br><br>
-
-              <b>Home Decor:</b>
-              Transform your living space into a celestial sanctuary with our collection of space-themed posters, wall art, and decorative items that capture the awe-inspiring beauty of the universe.<br><br>
-
-              <b>Stationery:</b>
-              Unleash your creativity with our space-inspired stationery, including notebooks, pens, and stickers that make every writing experience a cosmic adventure.<br><br>
-
-              <b>Embrace the Spirit of Space Exploration:</b>
-              At ISRO Merchandiser, we are committed to delivering high-quality products that encapsulate the spirit of space exploration. Each piece is carefully designed to evoke a sense of wonder, inspiring you to dream big and reach for the stars.
-              Supporting ISRO's Endeavors: Shop with Us: Join us on this cosmic adventure and explore our captivating range of ISRO-themed merchandise. Contact us to start your space-inspired shopping experience today.
-
-
-            </p>
+        <div class="contact-info">
+          <p><strong>Address:</strong> 2, Kalaban Park, Pune, Near Walnut School road, Phursungi,Pune-412308,
+            Maharashtra
+          </p>
+          <p><strong>Phone:</strong> +91 9822090659</p>
+          <p><strong>Email:</strong> info@indoscience.org</p>
         </div>
-    </section>
+      </div>
 
-
-   <!----------- footer -------------->
-    <footer class="footer">
-        <div class="footer-container">
-
-            <!-- Left Section -->
-            <div class="footer-left">
-                <h2>Get in Touch</h2>
-                <p>
-                    IndoScience is dedicated to spreading knowledge and innovation in space science.
-                    Stay connected with us through our channels.
-                </p>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/_indosciedu_?igsh=NTc4MTIwNjQ2YQ==" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/indo-science-education-trust-pune?originalSubdomain=in" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://m.facebook.com/indoscience/" target="_blank"><i class="fab fa-facebook"></i></a>
-                </div>
-                <div class="contact-info">
-                    <p><strong>Address:</strong> 2, Kalaban Park, Pune, Near Walnut School road, Phursungi,Pune-412308, Maharashtra
-                    </p>
-                    <p><strong>Phone:</strong> +91 9822090659</p>
-                    <p><strong>Email:</strong> info@indoscience.org</p>
-                </div>
-            </div>
-
-            <!-- Right Section -->
-            <div class="footer-right">
-                <div class="qr-box">
-                    <img src="Images/WhatsappAdd.png" alt="IndoScience QR Code">
-                    <p>Scan to connect with us</p>
-                </div>
-            </div>
+      <!-- Right Section -->
+      <div class="footer-right">
+        <div class="qr-box">
+          <img src="Images/WhatsappAdd.png" alt="IndoScience QR Code">
+          <p>Scan to connect with us</p>
         </div>
+      </div>
+    </div>
 
-        <div class="footer-bottom">
-            <p>© 2025 IndoScience. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <div class="footer-bottom">
+      <p>© 2025 IndoScience. All Rights Reserved.</p>
+    </div>
+  </footer>
 
 
 
@@ -543,26 +566,27 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 
-    <!---submenu script of audit -->
+  <!---submenu script of audit -->
   <script>
-document.querySelectorAll('.dropdown-submenu > a').forEach(function(element){
-  element.addEventListener("click", function (e) {
-    e.preventDefault();          // Stop link click
-    e.stopPropagation();         // Stop Bootstrap from closing menu
+    document.querySelectorAll('.dropdown-submenu > a').forEach(function (element) {
+      element.addEventListener("click", function (e) {
+        e.preventDefault();          // Stop link click
+        e.stopPropagation();         // Stop Bootstrap from closing menu
 
-    let submenu = this.nextElementSibling;
+        let submenu = this.nextElementSibling;
 
-    // Toggle submenu
-    if (submenu.style.display === "block") {
-      submenu.style.display = "none";
-    } else {
-      submenu.style.display = "block";
-    }
-  });
-});
-</script>
+        // Toggle submenu
+        if (submenu.style.display === "block") {
+          submenu.style.display = "none";
+        } else {
+          submenu.style.display = "block";
+        }
+      });
+    });
+  </script>
 
 
 
 </body>
+
 </html>
